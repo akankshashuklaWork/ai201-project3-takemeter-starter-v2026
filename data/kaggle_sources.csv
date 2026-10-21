@@ -1,0 +1,162 @@
+row,source,thread_title,url
+2,comment,Will the winner just be whoever can get the most amount of extra training data?,https://www.kaggle.com/competitions/name-that-llm/discussion/749447#3539324
+3,topic,It’s SFT all the way down,https://www.kaggle.com/competitions/kaggriculture/writeups/its-sft-all-the-way-down
+4,topic,Anyone else new to kaggle- data analytics,https://www.kaggle.com/discussions/getting-started/750838
+5,comment,Kaggle could we please start doing something about the public notebooks? ,https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/748181#3536956
+6,topic,"Fine-tuning Gemma 4 31B on 1,500 agent trajectories: LoRA scaling, budgets, and why my adapter lost to the base model",https://www.kaggle.com/competitions/gemma-4-developer-agent/discussion/750713
+7,topic,Finetuning TFMs,https://www.kaggle.com/competitions/playground-series-s6e10/discussion/749010
+8,comment,"Reaching 0.949 with one CoAtNet: labels, native crops, and anatomical mirroring",https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/746792#3535123
+9,writeup,70th Place Solution — Replay BC and Teacher Selection,https://www.kaggle.com/competitions/kaggriculture/writeups/70th-place-solution-replay-bc-and-teacher-select
+10,comment,Kaggle could we please start doing something about the public notebooks? ,https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/748181#3540395
+11,writeup,32nd Place Solution - Opening Book & Heuristics,https://www.kaggle.com/competitions/kaggriculture/writeups/32nd-place-solution-opening-book-and-heuristics
+12,writeup,51st Place Solution: Replay BC,https://www.kaggle.com/competitions/kaggriculture/writeups/51st-place-solution-replay-bc
+13,topic,Will the winner just be whoever can get the most amount of extra training data?,https://www.kaggle.com/competitions/name-that-llm/discussion/749447
+14,topic,[Other feedback] Automated bots likely abusing TPU sessions.,https://www.kaggle.com/discussions/product-feedback/750649
+15,topic,Suggestions On ML hackathons,https://www.kaggle.com/discussions/questions-and-answers/750545
+16,comment,Will the winner just be whoever can get the most amount of extra training data?,https://www.kaggle.com/competitions/name-that-llm/discussion/749447#3539180
+17,comment,How to build a Tabular Transformer!,https://www.kaggle.com/competitions/playground-series-s6e10/discussion/750009#3540658
+18,topic,"[LB 0.96114 / Ensemble 0.96238] 84D Feature Ablation: Avoiding the ""Feature Dilution"" Trap & Building an Orthogonal 15-Fold GPU Tree Stack",https://www.kaggle.com/competitions/playground-series-s6e10/discussion/750479
+19,comment,Kaggle could we please start doing something about the public notebooks? ,https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/748181#3539620
+20,comment,Kaggle could we please start doing something about the public notebooks? ,https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/748181#3536773
+21,comment,Will the winner just be whoever can get the most amount of extra training data?,https://www.kaggle.com/competitions/name-that-llm/discussion/749447#3540513
+22,topic,[Bug] No Preview Button for Discussion Creation,https://www.kaggle.com/discussions/product-feedback/749709
+23,comment,Will the winner just be whoever can get the most amount of extra training data?,https://www.kaggle.com/competitions/name-that-llm/discussion/749447#3538984
+24,comment,RSNA Knee MRI reports — LLM label-extraction benchmark ,https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/747658#3538431
+25,comment,Architectural Questions for 0.22 - 0.24+ Single-Agent Configurations,https://www.kaggle.com/competitions/gemma-4-developer-agent/discussion/750496#3540796
+26,comment,Tricks for the competition ,https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/745861#3533520
+27,topic,Kaggle could we please start doing something about the public notebooks? ,https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/748181
+28,topic,"Two 0.00 scores since Oct 16, runs ending early. Anyone else?",https://www.kaggle.com/competitions/arc-prize-2026-arc-agi-3/discussion/750173
+29,comment,Tricks for the competition ,https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/745861#3533416
+30,topic,Absolute beginner starting out in data analytics! Looking for advice & projects,https://www.kaggle.com/discussions/getting-started/751094
+31,topic,10th place: BC + PPO on a Single RTX 5090,https://www.kaggle.com/competitions/kaggriculture/writeups/10th-place-bc-ppo-on-a-single-rtx-5090
+32,writeup,Top 6% in my first Kaggle competition: a hand-written planner with lookups ,https://www.kaggle.com/competitions/kaggriculture/writeups/top-6-in-my-first-kaggle-competition-a-hand-writ
+33,comment,Why does not it award medals?,https://www.kaggle.com/competitions/neurips-2026-smart-buildings/discussion/749243#3538604
+34,comment,Kaggle could we please start doing something about the public notebooks? ,https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/748181#3541611
+35,comment,Tricks for the competition ,https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/745861#3532858
+36,comment,Kaggle could we please start doing something about the public notebooks? ,https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/748181#3540821
+37,comment,Will the winner just be whoever can get the most amount of extra training data?,https://www.kaggle.com/competitions/name-that-llm/discussion/749447#3538910
+38,topic,Best tools or scripts to automate converting Tableau LODs and calculated fields to Power BI DAX?,https://www.kaggle.com/discussions/questions-and-answers/749175
+39,topic,Evaluating Local LLMs (Qwen2.5-3B) on Code-Mixed Roman Urdu via ReAct Agent Workflows,https://www.kaggle.com/discussions/general/751044
+40,comment,Will the winner just be whoever can get the most amount of extra training data?,https://www.kaggle.com/competitions/name-that-llm/discussion/749447#3538994
+41,comment,Finetuning TFMs,https://www.kaggle.com/competitions/playground-series-s6e10/discussion/749010#3538553
+42,comment,"New Gemma 4 Models Available: 12B, E4B, and E2B",https://www.kaggle.com/competitions/gemma-4-developer-agent/discussion/748287#3537036
+43,comment,Best Practices for Reporting Bugs,https://www.kaggle.com/discussions/product-feedback/150618#1519885
+44,topic,Architectural Questions for 0.22 - 0.24+ Single-Agent Configurations,https://www.kaggle.com/competitions/gemma-4-developer-agent/discussion/750496
+45,comment,Can We Get a Downvote Button in the Code Section?,https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/747676#3535869
+46,comment,Finetuning TFMs,https://www.kaggle.com/competitions/playground-series-s6e10/discussion/749010#3538495
+47,comment,Why does not it award medals?,https://www.kaggle.com/competitions/neurips-2026-smart-buildings/discussion/749243#3538556
+48,comment,"New Gemma 4 Models Available: 12B, E4B, and E2B",https://www.kaggle.com/competitions/gemma-4-developer-agent/discussion/748287#3538346
+49,comment,Kaggle could we please start doing something about the public notebooks? ,https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/748181#3539020
+50,comment,Kaggle could we please start doing something about the public notebooks? ,https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/748181#3540543
+51,topic,Shake up/down or stable private LB,https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/751021
+52,comment,"Reaching 0.949 with one CoAtNet: labels, native crops, and anatomical mirroring",https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/746792#3534701
+53,comment,Kaggle could we please start doing something about the public notebooks? ,https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/748181#3538995
+54,topic,Where medals?,https://www.kaggle.com/competitions/kaggriculture/discussion/750025
+55,comment,"Reaching 0.949 with one CoAtNet: labels, native crops, and anatomical mirroring",https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/746792#3537933
+56,comment,"New Gemma 4 Models Available: 12B, E4B, and E2B",https://www.kaggle.com/competitions/gemma-4-developer-agent/discussion/748287#3537038
+57,comment,Kaggle could we please start doing something about the public notebooks? ,https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/748181#3540537
+58,topic,[Other feedback] TPU queue problem,https://www.kaggle.com/discussions/product-feedback/750492
+59,topic,Submit queue issue?,https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/750318
+60,comment,Energy-accounting issue in the boiler / hot-water tank model (reported to the hosts),https://www.kaggle.com/competitions/neurips-2026-smart-buildings/discussion/749531#3540500
+61,topic,9th: From Reinforcement Learning to a Final BC Agent,https://www.kaggle.com/competitions/kaggriculture/writeups/from-reinforcement-learning-to-a-final-bc-agent
+62,comment,Kaggle could we please start doing something about the public notebooks? ,https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/748181#3540549
+63,comment,How big does a public-LB gain have to be? sd ≈ 0.0012·√(1 − rank corr),https://www.kaggle.com/competitions/playground-series-s6e10/discussion/750480#3540666
+64,comment,How big does a public-LB gain have to be? sd ≈ 0.0012·√(1 − rank corr),https://www.kaggle.com/competitions/playground-series-s6e10/discussion/750480#3541426
+65,topic,Can We Get a Downvote Button in the Code Section?,https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/747676
+66,comment,What the punctuation already tells you about the 18 models (and what it can't),https://www.kaggle.com/competitions/name-that-llm/discussion/750664#3541324
+67,writeup,17th Place Solution: GPT-2 Income Tokens and a 3-Model Logit-Rank Blend,https://www.kaggle.com/competitions/playground-series-s6e9/writeups/17th-place-solution-gpt-2-income-tokens-and-a-3-m
+68,topic,Energy-accounting issue in the boiler / hot-water tank model (reported to the hosts),https://www.kaggle.com/competitions/neurips-2026-smart-buildings/discussion/749531
+69,topic,Title: Beginners on Kaggle — What Are You Working On? 🚀,https://www.kaggle.com/discussions/general/751255
+70,topic,Benchmarking Local Whisper (Tiny to Small) on Urdu-English Code-Switched Clinical Speech,https://www.kaggle.com/discussions/general/751045
+71,comment,Kaggle could we please start doing something about the public notebooks? ,https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/748181#3536805
+72,comment,Tricks for the competition ,https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/745861#3536367
+73,comment,Kaggle could we please start doing something about the public notebooks? ,https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/748181#3536709
+74,topic,"[Other feedback] What is going on with kaggle? never seen this much! [TPUs are popular right now. You are #990 in the queue. You can wait, try connecting again later, or use another accelerator.}",https://www.kaggle.com/discussions/product-feedback/750646
+75,comment,"Reaching 0.949 with one CoAtNet: labels, native crops, and anatomical mirroring",https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/746792#3536815
+76,comment,Tell us what you think about Kaggle Benchmarks,https://www.kaggle.com/discussions/general/612235#3431113
+77,writeup,28th Place Gold Solution — How We Taught a Farm to Make Decisions,https://www.kaggle.com/competitions/kaggriculture/writeups/28th-place-gold-solution-how-we-taught-a-farm-to
+78,comment,RSNA Knee MRI reports — LLM label-extraction benchmark ,https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/747658#3538540
+79,topic,31B vs 12B vs E4B with the same agent files: a local comparison,https://www.kaggle.com/competitions/gemma-4-developer-agent/discussion/750974
+80,comment,How to get started + Competition's Official Discord,https://www.kaggle.com/competitions/name-that-llm/discussion/749382#3539386
+81,topic,Titanic competition,https://www.kaggle.com/discussions/getting-started/750642
+82,comment,Tricks for the competition ,https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/745861#3537766
+83,comment,Important Update: New Tagging Requirement for Synthetic Datasets,https://www.kaggle.com/discussions/general/679960#3506666
+84,comment,Kaggle could we please start doing something about the public notebooks? ,https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/748181#3536702
+85,comment,[Other feedback] TPU queue problem,https://www.kaggle.com/discussions/product-feedback/750492#3540736
+86,comment,Kaggle could we please start doing something about the public notebooks? ,https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/748181#3537821
+87,comment,Tricks for the competition ,https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/745861#3533150
+88,comment,Will the winner just be whoever can get the most amount of extra training data?,https://www.kaggle.com/competitions/name-that-llm/discussion/749447#3539087
+89,topic,How to build a Tabular Transformer!,https://www.kaggle.com/competitions/playground-series-s6e10/discussion/750009
+90,comment,Finetuning TFMs,https://www.kaggle.com/competitions/playground-series-s6e10/discussion/749010#3538778
+91,comment,Tricks for the competition ,https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/745861#3537059
+92,comment,Tricks for the competition ,https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/745861#3537127
+93,comment,Best Practices for Reporting Bugs,https://www.kaggle.com/discussions/product-feedback/150618#1023109
+94,comment,Best Practices for Reporting Bugs,https://www.kaggle.com/discussions/product-feedback/150618#1684213
+95,comment,Qwen3.8 or something else?,https://www.kaggle.com/competitions/arc-prize-2026-arc-agi-2/discussion/750546#3541471
+96,comment,Meetup Organizer Award,https://www.kaggle.com/discussions/general/536048#3404642
+97,comment,"New Gemma 4 Models Available: 12B, E4B, and E2B",https://www.kaggle.com/competitions/gemma-4-developer-agent/discussion/748287#3536987
+98,comment,18-model wide response additional corpus,https://www.kaggle.com/competitions/name-that-llm/discussion/749629#3540514
+99,comment,Best Practices for Reporting Bugs,https://www.kaggle.com/discussions/product-feedback/150618#851669
+100,topic,Problem in submission(help please),https://www.kaggle.com/competitions/name-that-llm/discussion/751054
+101,comment,Best Practices for Reporting Bugs,https://www.kaggle.com/discussions/product-feedback/150618#1708142
+102,comment,New Official Kaggle Discord Server!,https://www.kaggle.com/discussions/general/429933#2974500
+103,comment,"Reaching 0.949 with one CoAtNet: labels, native crops, and anatomical mirroring",https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/746792#3536650
+104,comment,Kaggle could we please start doing something about the public notebooks? ,https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/748181#3539835
+105,comment,"New Gemma 4 Models Available: 12B, E4B, and E2B",https://www.kaggle.com/competitions/gemma-4-developer-agent/discussion/748287#3537902
+106,comment,Will the winner just be whoever can get the most amount of extra training data?,https://www.kaggle.com/competitions/name-that-llm/discussion/749447#3540746
+107,comment,Qwen3.8 or something else?,https://www.kaggle.com/competitions/arc-prize-2026-arc-agi-2/discussion/750546#3540789
+108,comment,Best Practices for Reporting Bugs,https://www.kaggle.com/discussions/product-feedback/150618#1725190
+109,comment,Tell us what you think about Kaggle Benchmarks,https://www.kaggle.com/discussions/general/612235#3414221
+110,comment,"Reaching 0.949 with one CoAtNet: labels, native crops, and anatomical mirroring",https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/746792#3534666
+111,topic,Submission with a skill scored 0.00 with no error,https://www.kaggle.com/competitions/gemma-4-developer-agent/discussion/750887
+112,comment,Kaggle could we please start doing something about the public notebooks? ,https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/748181#3540310
+113,topic,Are datasets download time include din submission sunning time?,https://www.kaggle.com/competitions/arc-prize-2026-arc-agi-2/discussion/750234
+114,comment,Getting Started with JAX/FLAX,https://www.kaggle.com/discussions/getting-started/315696#3235756
+115,topic,Different public scores from an identical submission ZIP - reproducibility question,https://www.kaggle.com/competitions/gemma-4-developer-agent/discussion/750521
+116,topic,Why does not it award medals?,https://www.kaggle.com/competitions/neurips-2026-smart-buildings/discussion/749243
+117,comment,Tricks for the competition ,https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/745861#3533422
+118,comment,Kaggle could we please start doing something about the public notebooks? ,https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/748181#3537165
+119,comment,Will the winner just be whoever can get the most amount of extra training data?,https://www.kaggle.com/competitions/name-that-llm/discussion/749447#3540450
+120,comment,Submit queue issue?,https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/750318#3540441
+121,comment,Finetuning TFMs,https://www.kaggle.com/competitions/playground-series-s6e10/discussion/749010#3538330
+122,comment,"Reaching 0.949 with one CoAtNet: labels, native crops, and anatomical mirroring",https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/746792#3537923
+123,topic,[Other feedback] Dataset furkhangul/handpilot-car: ,https://www.kaggle.com/discussions/product-feedback/750567
+124,topic,"Book Genre Classification Stuck at 57–63%: Need Advice on Dataset Design, Multi-Label Classification, and Evaluation Metrics",https://www.kaggle.com/discussions/questions-and-answers/749905
+125,topic,How big does a public-LB gain have to be? sd ≈ 0.0012·√(1 − rank corr),https://www.kaggle.com/competitions/playground-series-s6e10/discussion/750480
+126,topic,Farmcore: a one-pass transformer trained on what the engine executed,https://www.kaggle.com/competitions/kaggriculture/writeups/farmcore-a-one-pass-transformer-trained-on-what-t
+127,topic,Section 2.6 question: training data generated from the candidate models,https://www.kaggle.com/competitions/name-that-llm/discussion/751011
+128,topic,What the punctuation already tells you about the 18 models (and what it can't),https://www.kaggle.com/competitions/name-that-llm/discussion/750664
+129,topic,[Bug] Code competition submission stuck on Running for over two hours,https://www.kaggle.com/discussions/product-feedback/751169
+130,comment,"Fine-tuning Gemma 4 31B on 1,500 agent trajectories: LoRA scaling, budgets, and why my adapter lost to the base model",https://www.kaggle.com/competitions/gemma-4-developer-agent/discussion/750713#3541985
+131,topic,"[Bug] GPU T4 x2 commits stuck in ""Queued"" for 2+ hours (CPU runs fine)",https://www.kaggle.com/discussions/product-feedback/750694
+132,topic,Has anyone achieved reliable gains from LoRA trajectory SFT on Gemma 4 coding agents?,https://www.kaggle.com/competitions/gemma-4-developer-agent/discussion/750961
+133,writeup,"19th place (solo gold): a behaviour clone of the 1st, 3rd and 7th place teams",https://www.kaggle.com/competitions/kaggriculture/writeups/19th-place-solo-gold-a-behaviour-clone
+134,comment,Kaggle could we please start doing something about the public notebooks? ,https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/748181#3540547
+135,topic,queryable curriculum and textbook corpus,https://www.kaggle.com/discussions/questions-and-answers/750228
+136,topic,Urban Air Quality Modeling Across Six Pakistani Cities: A 1-Year OpenAQ Sensor Analysis,https://www.kaggle.com/discussions/general/751043
+137,comment,Best Practices for Reporting Bugs,https://www.kaggle.com/discussions/product-feedback/150618#1772073
+138,comment,Kaggle could we please start doing something about the public notebooks? ,https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/748181#3537971
+139,topic,Gold Medal Solution with Under $60 of Compute,https://www.kaggle.com/competitions/kaggriculture/writeups/gold-medalist-with-70-of-compute
+140,topic,New to data analytics! Looking for beginner project ideas & study tips,https://www.kaggle.com/discussions/getting-started/751093
+141,comment,How big does a public-LB gain have to be? sd ≈ 0.0012·√(1 − rank corr),https://www.kaggle.com/competitions/playground-series-s6e10/discussion/750480#3540836
+142,comment,Will the winner just be whoever can get the most amount of extra training data?,https://www.kaggle.com/competitions/name-that-llm/discussion/749447#3541545
+143,comment,Will the winner just be whoever can get the most amount of extra training data?,https://www.kaggle.com/competitions/name-that-llm/discussion/749447#3538953
+144,comment,Finetuning TFMs,https://www.kaggle.com/competitions/playground-series-s6e10/discussion/749010#3540659
+145,comment,Meetup Organizer Award,https://www.kaggle.com/discussions/general/536048#3263114
+146,comment,Finetuning TFMs,https://www.kaggle.com/competitions/playground-series-s6e10/discussion/749010#3538484
+147,topic,"New here? Grouped CV that tracks the LB, CPU baseline code (LB 0.353), pitfalls, 2xT4 tips",https://www.kaggle.com/competitions/name-that-llm/discussion/750390
+148,comment,Useful helper dataset,https://www.kaggle.com/competitions/name-that-llm/discussion/750267#3541515
+149,comment,Best Practices for Reporting Bugs,https://www.kaggle.com/discussions/product-feedback/150618#1763824
+150,comment,Will the winner just be whoever can get the most amount of extra training data?,https://www.kaggle.com/competitions/name-that-llm/discussion/749447#3540759
+151,comment,Tricks for the competition ,https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/745861#3537565
+152,comment,RSNA Knee MRI reports — LLM label-extraction benchmark ,https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/747658#3539660
+153,comment,Qwen3.8 or something else?,https://www.kaggle.com/competitions/arc-prize-2026-arc-agi-2/discussion/750546#3541414
+154,comment,Kaggle could we please start doing something about the public notebooks? ,https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/748181#3536974
+155,comment,RSNA Knee MRI reports — LLM label-extraction benchmark ,https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/747658#3539132
+156,writeup,Cloning the best farmer on Colab,https://www.kaggle.com/competitions/kaggriculture/writeups/cloning-the-best-farmer-on-one-rtx-5070
+157,comment,Energy-accounting issue in the boiler / hot-water tank model (reported to the hosts),https://www.kaggle.com/competitions/neurips-2026-smart-buildings/discussion/749531#3541221
+158,comment,Finetuning TFMs,https://www.kaggle.com/competitions/playground-series-s6e10/discussion/749010#3539103
+159,comment,"Reaching 0.949 with one CoAtNet: labels, native crops, and anatomical mirroring",https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/746792#3535186
+160,comment,"Reaching 0.949 with one CoAtNet: labels, native crops, and anatomical mirroring",https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/746792#3534905
+161,topic,[Bug] Missing question 2 in the python course: Strings and Dictionaries Exercise,https://www.kaggle.com/discussions/product-feedback/750761
+162,topic,"Reaching 0.949 with one CoAtNet: labels, native crops, and anatomical mirroring",https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/746792
