@@ -51,63 +51,53 @@ whether you hit them:
 
 ---
 
-## 1.
+## 1. Overall accuracy
 
-<!-- Your criterion. It must name a number. -->
+<!-- DRAFT — written by Claude at Akanksha's direct request; needs her review before submission. See label_definitions.txt / README for the taxonomy this is based on. -->
 
+Overall accuracy on the held-out set will be at least 0.65.
 
-
-**Why this target:**
-
-
+**Why this target:** With 3 labels, random guessing gets about 0.33. Kaggle Discussions posts are fairly distinct in register (a finished technical write-up reads very differently from a platform rant), so I expect the model to clear "better than guessing" by a wide margin — but 200 posts total is a small dataset for a fine-tune, so I'm not setting this near ceiling. 0.65 is comfortably above the floor without assuming the model will be excellent.
 
 ---
 
-## 2.
+## 2. Per-label performance (weakest label)
 
-<!-- Your criterion. -->
+<!-- DRAFT — same as above. -->
 
+Every label will have an F1 of at least 0.55 on the held-out set, including whichever label ends up smallest.
 
-
-**Why this target:**
-
-
+**Why this target:** `complaint` and `open_question` are likely to be thinner than `technical_analysis` in a technical-heavy forum like Kaggle Discussions — Kaggle Discussions skews toward people sharing or asking about technical work. A smaller label means fewer training examples and a noisier test-split score (as few as 8 examples in test, per the notes above), so 0.55 is set lower than the overall-accuracy target on purpose, to be a realistic floor rather than a stretch goal.
 
 ---
 
-## 3.
+## 3. Balance
 
-<!-- Your criterion. -->
+<!-- DRAFT — same as above. -->
 
+No single label will make up more than 65% of the 200 labeled posts.
 
-
-**Why this target:**
-
-
+**Why this target:** The project's hard cap is 70%; I'm setting my own target 5 points under that as a safety margin, since `technical_analysis` is the label I'd expect to dominate by default if I only collect from the most visible/upvoted threads. Staying under 65% means I had to deliberately go find enough `complaint` and `open_question` posts rather than taking whatever came easiest.
 
 ---
 
-## 4.
+## 4. Consistency
 
-<!-- Your criterion. -->
+<!-- DRAFT — same as above. -->
 
+When I label the same 20 posts twice — once "cold" in Milestone 4 and once again later, without looking at my first pass — I will agree with myself on at least 80% of them.
 
-
-**Why this target:**
-
-
+**Why this target:** My hardest boundary (`complaint` vs. `open_question`) is a judgment call about tone and intent, not a hard fact, so I don't expect 100% self-agreement. 80% means the decision rule I wrote is actually usable in practice, not just on the one borderline example I used to write it.
 
 ---
 
-## 5.
+## 5. Confidence
 
-<!-- Your criterion. -->
+<!-- DRAFT — same as above. -->
 
+Posts the model predicts with high confidence (top probability above 0.80) will be correct at least 85% of the time.
 
-
-**Why this target:**
-
-
+**Why this target:** A classifier that's just as wrong when it's "sure" as when it's unsure isn't trustworthy to act on. 85% is above my overall-accuracy target (0.65) on purpose — confident predictions should be meaningfully more reliable than the average prediction, not just equal to it.
 
 ---
 
