@@ -1,50 +1,50 @@
 {
   "seed": 42,
   "n_test": 25,
-  "accuracy": 0.44,
-  "f1_macro": 0.20370370370370372,
+  "accuracy": 0.56,
+  "f1_macro": 0.23931623931623933,
   "per_label": {
     "technical_analysis": {
       "precision": 0.0,
       "recall": 0.0,
       "f1": 0.0,
-      "support": 7
+      "support": 6
     },
     "open_question": {
-      "precision": 0.44,
+      "precision": 0.56,
       "recall": 1.0,
-      "f1": 0.6111111111111112,
-      "support": 11
+      "f1": 0.717948717948718,
+      "support": 14
     },
     "complaint": {
       "precision": 0.0,
       "recall": 0.0,
       "f1": 0.0,
-      "support": 7
+      "support": 5
     }
   },
   "confusion": {
     "technical_analysis": {
       "technical_analysis": 0,
-      "open_question": 7,
+      "open_question": 6,
       "complaint": 0
     },
     "open_question": {
       "technical_analysis": 0,
-      "open_question": 11,
+      "open_question": 14,
       "complaint": 0
     },
     "complaint": {
       "technical_analysis": 0,
-      "open_question": 7,
+      "open_question": 5,
       "complaint": 0
     }
   },
   "confidence": {
-    "mean_when_right": 0.4529259502887726,
-    "mean_when_wrong": 0.42950719594955444,
-    "accuracy_most_confident_third": 0.75,
-    "accuracy_least_confident_third": 0.125,
+    "mean_when_right": 0.5097531676292419,
+    "mean_when_wrong": 0.4884380102157593,
+    "accuracy_most_confident_third": 1.0,
+    "accuracy_least_confident_third": 0.25,
     "n_per_third": 8
   },
   "device": "mps",

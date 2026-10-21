@@ -43,7 +43,7 @@
      sentences. -->
 
 <!-- DRAFT — check this matches how you'd actually describe it, and personalize the wording before submitting. -->
-TakeMeter sorts posts from **Kaggle Discussions**, the forum where Kaggle users talk about competitions, the platform, and machine learning in general. My classifier sorts each post into one of three labels: `technical_analysis` (a finished write-up reporting a concrete result from building or training something), `open_question` (an unresolved, neutral-toned question — technical or not), or `complaint` (a frustrated or cynical post about the platform or community).
+TakeMeter sorts posts from **Kaggle Discussions**, the forum where Kaggle users talk about competitions, the platform, and machine learning in general. My classifier sorts each post into one of three labels: `technical_analysis` (a finished write-up reporting a concrete result from building or training something), `open_question` (any post that asks something and is still unresolved, even if it also vents or reports numbers), or `complaint` (a frustrated or cynical post about the platform or community that asks nothing).
 
 
 ---
@@ -68,7 +68,7 @@ TakeMeter sorts posts from **Kaggle Discussions**, the forum where Kaggle users 
 
 ### `open_question`
 
-**Definition:** A question — technical or not — where the outcome is still unresolved. Neutral in tone, no firm verdict yet, just asking or wondering out loud.
+**Definition:** A post that asks something — technical or not — where the answer is still unresolved. If a post asks a question, or asks for help or for a fix, it is an `open_question`, even if it also vents or reports numbers. Neutral bug reports and requests for help count too.
 
 **Example 1:**
 > "I've noticed that the leaderboard medals have disappeared. Is this a bug, or were they intentionally removed? Will they be brought back?"
@@ -78,22 +78,24 @@ TakeMeter sorts posts from **Kaggle Discussions**, the forum where Kaggle users 
 
 ### `complaint`
 
-**Definition:** A cynical or frustrated post about the platform or community that vents or demands broad change, rather than asking a specific, answerable question.
+**Definition:** A cynical or frustrated post about the platform or community that vents or demands broad change and asks nothing. If the post contains a question, it is an `open_question` instead.
 
 **Example 1:**
-> "Yet again, we have another competition where low-effort public ensembles are being released with less than two weeks remaining, potentially allowing participants to secure medals through copy-paste submissions rather than their own work..."
+> "I really agree, I've also seen people just copying other Grandmaster's work in not only this competition but the Google Deepmind and Playground series! This is just so annoying!"
 
 **Example 2:**
-> "the current state of TPU interactive resources has become completely unusable for legitimate data scientists and learners... queue has permanently jumped to 350+ users... 🤬 These automated scripts are draining resources from real people who are actually trying to train [models]."
+> "This is a latent problem now-a-days. Firstly, compute costs + agents expenses is an issue and such notebooks accentuate the problem even further. Unfortunately Kaggle won't do anything regarding this - that is the biggest problem"
 
 ### The hardest boundary
 
 **Which two labels:** `complaint` vs. `open_question`
 
-**The decision rule I used every time:**
-If a post asks for a specific check or fix on one concrete issue, it's `open_question` — even if the issue is a platform problem. If a post demands broad change or vents about a pattern affecting many people, it's `complaint`.
+**The decision rule I use every time:**
+If the post asks something — a question, a request for help, or a request for a fix — it is `open_question`, even if it also vents or reports numbers. A post is a `complaint` only if it is frustrated or cynical about the platform or community and asks nothing. A `technical_analysis` post that ends by asking the community a question is also an `open_question`; a long write-up that only uses a rhetorical heading like "Why does this happen?" and then answers it stays `technical_analysis`.
 
-The case that forced this rule: a bug report — *"My RSNA Knee code competition submission has remained in Running status for over two hours... Could the Kaggle team check whether this submission is still being evaluated or is stuck?"* — is about a platform problem, same as my `complaint` examples, but it's flat, factual, and asks for one specific fix rather than venting about a pattern. That's `open_question`, not `complaint`.
+**How I found this rule:** My first version of the rule was "a specific, answerable ask is `open_question`; venting about a pattern is `complaint`". I tested it by having Claude write 8 posts that sit on my boundaries, and I labelled them blind. I called every post that contained a question `open_question` and only the one with no question a `complaint`, including posts that were venting ("Why does Kaggle keep ignoring the notebook-copying problem?") and a post that reported its own numbers and then asked a question. So the rule I actually apply is "does it ask something?", and I rewrote the written rule to say that. I then re-checked the rows of `labels.csv` that contained a question mark: 10 rows that I had labelled `complaint` and 7 that I had labelled `technical_analysis` became `open_question`.
+
+**The case that forced the first version:** a bug report — *"My RSNA Knee code competition submission has remained in Running status for over two hours... Could the Kaggle team check whether this submission is still being evaluated or is stuck?"* — is about a platform problem, like a complaint, but it is flat, factual and asks for one specific fix. That is an `open_question`.
 
 
 ---
@@ -107,7 +109,7 @@ The case that forced this rule: a bug report — *"My RSNA Knee code competition
 
 I skipped posts that fit none of my three labels (praise like "great write-up!", welcome messages, staff announcements, jokes, arguments between two users), posts in other languages (my model is English-only) and the very long Seaborn tutorials. So the file is not a random sample of Kaggle Discussions. It is a sample of posts that fit my labels, and that is a limit on what the classifier can claim.
 
-**How I labelled them:** Claude collected the posts and pre-labelled all 161 using my label definitions and my complaint-vs-open_question decision rule. Every row's `note` column says `pre-labelled by Claude, needs my review`. <!-- TODO (Akanksha): read every row, correct what you disagree with, and update the note column and the counts below. Then label the 20 rows in cold_20_to_label.csv yourself WITHOUT looking at labels.csv, put your labels into labels.csv, and set their note to `cold`. Re-run notebook sections 2-5 and re-commit results.json and test_split.csv. -->
+**How I labelled them:** Claude collected the posts and pre-labelled all 161 using my label definitions and my complaint-vs-open_question decision rule. After my blind stress test I changed the rule to "does the post ask something?", and Claude re-labelled the 17 rows that contained a question (marked in their `note`). Every row's `note` column says `pre-labelled by Claude, needs my review`. <!-- TODO (Akanksha): read every row, correct what you disagree with, and update the note column and the counts below. Then label the 20 rows in cold_20_to_label.csv yourself WITHOUT looking at labels.csv, put your labels into labels.csv, and set their note to `cold`. Re-run notebook sections 2-5 and re-commit results.json and test_split.csv. -->
 
 I did not reach the 200 rows the brief asks for. I got 161, because Kaggle rate-limited my collection (it refused requests after I fetched too quickly) and because many posts fit none of my labels. Under the brief's stop rule that is above the 150-row floor.
 
@@ -115,12 +117,12 @@ I did not reach the 200 rows the brief asks for. I got 161, because Kaggle rate-
 
 | Label | Count | Share |
 |---|---|---|
-| `open_question` | 71 | 44% |
-| `complaint` | 45 | 28% |
-| `technical_analysis` | 45 | 28% |
+| `open_question` | 88 | 55% |
+| `technical_analysis` | 38 | 24% |
+| `complaint` | 35 | 22% |
 | **Total** | 161 | 100% |
 
-No label is above 70% (the largest is 44%).
+No label is above 70% (the largest is 55%). `complaint` and `technical_analysis` are on the thin side. `open_question` is large partly because I count every post that asks something as one.
 
 **Three hard cases**
 
@@ -136,7 +138,7 @@ No label is above 70% (the largest is 44%).
 >
 > *Could have been:* `open_question` or `complaint`
 >
-> *I chose:* `complaint`, because the post vents about a pattern that affects many people and asks for a broad platform change. The question mark is a request for a feature, not a specific fix for one concrete issue.
+> *I chose:* `open_question`, because it ends by asking something. My first pass called it a `complaint` because most of the post vents about a pattern, but my final rule is that a post that asks something is an `open_question` even if it also vents.
 
 **3.**
 > *The post:* "Really clear write-up. Since the random-init backbone matched pretrained Qwen (0.960436 vs 0.960444), it seems the gain comes from the architecture and not from language pretraining. Did you try removing the causal mask so CLS-style attention sees all features bidirectionally?..."
@@ -161,11 +163,11 @@ No label is above 70% (the largest is 44%).
 
 | Label | train | val | test |
 |---|---|---|---|
-| `technical_analysis` | 31 | 7 | 7 |
-| `open_question` | 50 | 10 | 11 |
-| `complaint` | 31 | 7 | 7 |
+| `technical_analysis` | 26 | 6 | 6 |
+| `open_question` | 61 | 13 | 14 |
+| `complaint` | 25 | 5 | 5 |
 
-`technical_analysis` and `complaint` have only 7 test examples each (under the 8 the brief flags), so their scores will move a lot between seeds.
+`technical_analysis` has 6 and `complaint` has only 5 test examples (under the 8 the brief flags), so their scores will move a lot between seeds.
 
 I committed `results.json` and `test_split.csv` and have not analysed them yet. That is next unit's work. One thing I could not miss when the notebook printed its summary: the model put almost every test post into `open_question`, the biggest label.
 
@@ -184,6 +186,12 @@ I committed `results.json` and `test_split.csv` and have not analysed them yet. 
 - *What I asked for:* I asked Claude to collect public Kaggle Discussions posts, aiming for about 70 per label, and to pre-label them using my definitions and decision rule.
 - *What came back:* 161 posts from Kaggle's discussion pages, each with a label. Claude also noticed that one of my `open_question` examples was not a question and swapped in a real one.
 - *What I changed:* <!-- TODO (Akanksha): describe the rows you corrected and how many. -->
+
+**Moment 3 (extra): stress-testing my labels.**
+
+- *What I asked for:* I asked Claude to write 8 posts that sit on the boundaries between my labels, and I classified them blind.
+- *What came back:* 8 made-up posts (not real Kaggle posts). I called all of them `open_question` except the one with no question in it, and Claude's own read split from mine on 4 of 8.
+- *What I changed:* I replaced my written decision rule with the rule I actually apply ("if the post asks something, it's `open_question`") and re-labelled the 17 affected rows in `labels.csv`. I did not adopt the two tie-breakers Claude suggested.
 
 **Pre-labelling disclosure:** All 161 rows were pre-labelled by Claude. <!-- TODO (Akanksha): confirm you read and corrected every row, and name the 20 rows you labelled cold. -->
 
