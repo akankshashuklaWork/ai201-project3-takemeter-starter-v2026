@@ -42,6 +42,8 @@
 <!-- Your community, and what your classifier sorts posts into. Three or four
      sentences. -->
 
+<!-- DRAFT — check this matches how you'd actually describe it, and personalize the wording before submitting. -->
+TakeMeter sorts posts from **Kaggle Discussions**, the forum where Kaggle users talk about competitions, the platform, and machine learning in general. My classifier sorts each post into one of three labels: `technical_analysis` (a finished write-up reporting a concrete result from building or training something), `open_question` (an unresolved, neutral-toned question — technical or not), or `complaint` (a frustrated or cynical post about the platform or community).
 
 
 ---
@@ -54,34 +56,44 @@
      The decision rule is worth a point on its own and it's the thing most
      people leave out. Every taxonomy has a hardest boundary. Name yours. -->
 
-### `label_one`
+### `technical_analysis`
 
-**Definition:**
-
-**Example 1:**
->
-
-**Example 2:**
->
-
-### `label_two`
-
-**Definition:**
+**Definition:** A finished technical write-up that reports a concrete result from actually building or training something — real numbers, not just a claim.
 
 **Example 1:**
->
+> "Team Farmcore, 4th place of ~10,200 teams... The biggest gain came from fixing the labels, not the model: retrained on what the engine executed instead of what players ordered, plus one feeding rule, the same network went from 3 to 23 wins of 24 against our previous best."
 
 **Example 2:**
->
+> "0.959795: 5-fold OOF AUC, raw features only. 22: positions per row. 10.1M: trainable LoRA parameters on a frozen 0.6B backbone. ~52 min: per fold on one A100 (3 epochs, ~920 rows/s)."
+
+### `open_question`
+
+**Definition:** A question — technical or not — where the outcome is still unresolved. Neutral in tone, no firm verdict yet, just asking or wondering out loud.
+
+**Example 1:**
+> "the sudden flood of 55+ scores makes me think that there is an easy recipe out there. I was able to go from 35 to 45 by ensembling my NVARC-based solution with a Qwen3.8-27B run. doubtful if it can push above 50, though."
+
+**Example 2:**
+> "Someone who has 1M training examples per model will find more patterns than someone with 100K training examples per model. Is paying model providers for data generation going to be the key to winning?"
+
+### `complaint`
+
+**Definition:** A cynical or frustrated post about the platform or community that vents or demands broad change, rather than asking a specific, answerable question.
+
+**Example 1:**
+> "Yet again, we have another competition where low-effort public ensembles are being released with less than two weeks remaining, potentially allowing participants to secure medals through copy-paste submissions rather than their own work..."
+
+**Example 2:**
+> "the current state of TPU interactive resources has become completely unusable for legitimate data scientists and learners... queue has permanently jumped to 350+ users... 🤬 These automated scripts are draining resources from real people who are actually trying to train [models]."
 
 ### The hardest boundary
 
-**Which two labels:**
+**Which two labels:** `complaint` vs. `open_question`
 
 **The decision rule I used every time:**
-<!-- e.g. "If the post names a specific checkable fact, it's `analysis`, even
-     if the tone is heated." -->
+If a post asks for a specific check or fix on one concrete issue, it's `open_question` — even if the issue is a platform problem. If a post demands broad change or vents about a pattern affecting many people, it's `complaint`.
 
+The case that forced this rule: a bug report — *"My RSNA Knee code competition submission has remained in Running status for over two hours... Could the Kaggle team check whether this submission is still being evaluated or is stuck?"* — is about a platform problem, same as my `complaint` examples, but it's flat, factual, and asks for one specific fix rather than venting about a pattern. That's `open_question`, not `complaint`.
 
 
 ---
