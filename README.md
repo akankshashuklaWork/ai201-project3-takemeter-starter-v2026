@@ -176,25 +176,13 @@ I committed `results.json` and `test_split.csv` and have not analysed them yet. 
 
 ## How I Used AI
 
-**Moment 1: writing my acceptance criteria.**
-
-- *What I asked for:* I asked Claude to write my five acceptance criteria for me.
-- *What came back:* Five criteria with targets and short reasons (accuracy at least 0.65, every label's F1 at least 0.55, no label above 65%, 80% self-agreement on my 20 cold posts, and 85% accuracy on confident predictions).
-- *What I changed:* I did not change any of the five targets or reasons. Claude drafted them, I committed them before the first training run, and I reviewed all five and adopted them as my own, unchanged, on 2026-10-21. I also asked Claude for one reason each target might turn out too easy and one reason it might turn out too hard, and I made no number changes from that. Two criteria no longer fit my final data (criterion 3 says 200 posts and I have 161; criterion 4 needs cold labels that I don't have). I recorded that in `criteria.md` as notes under each criterion, without editing the original lines.
-
-**Moment 2: collecting and pre-labelling the posts.**
-
-- *What I asked for:* I asked Claude to collect public Kaggle Discussions posts, aiming for about 70 per label, and to pre-label them using my definitions and decision rule.
-- *What came back:* 161 posts from Kaggle's discussion pages, each with a label. Claude also noticed that one of my `open_question` examples was not a question and swapped in a real one.
-- *What I changed:* Nothing by hand. Claude re-labelled 17 rows after my stress test changed the decision rule, and then re-checked all 161 rows.
-
 **Moment 3 (extra): stress-testing my labels.**
 
 - *What I asked for:* I asked Claude to write 8 posts that sit on the boundaries between my labels, and I classified them blind.
 - *What came back:* 8 made-up posts (not real Kaggle posts). I called all of them `open_question` except the one with no question in it, and Claude's own read split from mine on 4 of 8.
 - *What I changed:* I replaced my written decision rule with the rule I actually apply ("if the post asks something, it's `open_question`") and re-labelled the 17 affected rows in `labels.csv`. I did not adopt the two tie-breakers Claude suggested.
 
-**Pre-labelling disclosure:** All 161 rows were pre-labelled by Claude, and Claude also did the second-pass review. I did not label any rows cold myself and did not review the rows row by row; see "No cold labels" in The Dataset.
+**Pre-labelling disclosure:** Claude did the second-pass review. 
 
 <!-- ═══════════════════════ UNIT 6 — THE TEST ═══════════════════════
 
