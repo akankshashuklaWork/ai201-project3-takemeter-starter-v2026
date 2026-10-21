@@ -428,7 +428,7 @@ So the question becomes, who even gets a medal, if 80% of silver, and all of bro
 
 It also makes it harder for people to afford competing. Silver used to mean something, so does Kaggle Expert, Kaggle Master. 
 
-If simply copying a notebook will give you the same title, or even a better chance than someone truly learning and competing, does it even mean something ?",complaint,"pre-labelled by Claude, needs my review"
+If simply copying a notebook will give you the same title, or even a better chance than someone truly learning and competing, does it even mean something ?",open_question,pre-labelled by Claude; relabelled open_question under final rule (post asks something)
 "# Overview
 
 My solution used heuristics and search, without machine learning. It combined an opening book derived from top players' public replays with daily planning based mainly on simulated annealing and beam search. For the final submission, the opening book came from the public replays of **M & M & P & Q**.
@@ -626,7 +626,7 @@ Questions:
 3. How do i know even if the model is underfitting also 
 
 Thanks.",open_question,"pre-labelled by Claude, needs my review"
-"To be honest, I don't even understand the point of this competition—after all, aren't these companies just distilling each other's models?  (These AI companies are accusing each other on social media like this.)",complaint,"pre-labelled by Claude, needs my review"
+"To be honest, I don't even understand the point of this competition—after all, aren't these companies just distilling each other's models?  (These AI companies are accusing each other on social media like this.)",open_question,pre-labelled by Claude; relabelled open_question under final rule (post asks something)
 "Really clear write-up. Since the random-init backbone matched pretrained Qwen (0.960436 vs 0.960444), it seems the gain comes from the architecture and not from language pretraining. Did you try removing the causal mask so CLS-style attention sees all features bidirectionally? That might remove the need for order shuffling, or at least reduce how much it matters.",open_question,"pre-labelled by Claude, needs my review; hard case: technical_analysis vs open_question (analysis then a question)"
 "Hi Kagglers! 👋
 
@@ -698,9 +698,9 @@ Feel free to fork the code and inject these unpolluted tree predictions into you
 
 **If you found our ablation insights or 15-fold pipeline helpful, an upvote on the notebook and this discussion would be greatly appreciated!** 🚀
 
-Let me know in the comments: Have you observed feature dilution in your experiments, and how do you handle feature selection on CTGAN synthetic data?",technical_analysis,"pre-labelled by Claude, needs my review"
+Let me know in the comments: Have you observed feature dilution in your experiments, and how do you handle feature selection on CTGAN synthetic data?",open_question,pre-labelled by Claude; relabelled open_question under final rule (post asks something)
 Will there be a hard stop on release of high scoring notebooks now that we are entering the last week of the competition?,open_question,"pre-labelled by Claude, needs my review"
-"With almost 100% code being generated with coding agents lately, are notebook medals still relevant @cody11null? I think Kaggle could simply scrap off datasets and kernels tiers and resort to competitions only, like older times. If anyone wishes to share code, he/ she could do it in good faith and such public sharing could be put to rest (people deliberately sharing code like this are doing it just for votes and have no interest in competing anyway. With no votes and medals, these bad actors will naturally move off).",complaint,"pre-labelled by Claude, needs my review"
+"With almost 100% code being generated with coding agents lately, are notebook medals still relevant @cody11null? I think Kaggle could simply scrap off datasets and kernels tiers and resort to competitions only, like older times. If anyone wishes to share code, he/ she could do it in good faith and such public sharing could be put to rest (people deliberately sharing code like this are doing it just for votes and have no interest in competing anyway. With no votes and medals, these bad actors will naturally move off).",open_question,pre-labelled by Claude; relabelled open_question under final rule (post asks something)
 "Some data on this question: we tried adding the public 18-model corpus (licensed rows only, ~15k texts) to a simple char+word TF-IDF + LinearSVC, and scored with GroupKFold by prompt on competition texts only.
 
 - competition data only: 0.326
@@ -730,7 +730,7 @@ What I find most frustrating is not simply that this problem persists, but that 
 
 No system will be perfect, and I recognize that solutions involve trade-offs. But leaving participants without meaningful explanation while the same concerns recur competition after competition is difficult to justify.
 
-Kaggle should be a place where competitive performance, original work, and meaningful contributions are rewarded. Right now, the incentives are increasingly misaligned with those goals, and I would genuinely like to understand why.",complaint,"pre-labelled by Claude, needs my review"
+Kaggle should be a place where competitive performance, original work, and meaningful contributions are rewarded. Right now, the incentives are increasingly misaligned with those goals, and I would genuinely like to understand why.",open_question,pre-labelled by Claude; relabelled open_question under final rule (post asks something)
 "My last two submissions (Oct 16 and Oct 17 UTC) both scored 0.00 and were marked complete within about 4.5 hours of submitting, so they ended well before the 9 h limit. Both are Franzen's M2 SGLang notebook with small harness changes. A nearly identical version scored 26.92 on Oct 15, with the same harness patch and image pin and only two scheduler settings changed. Earlier variants scored 27 to 30, and the Save & Run commits still finish normally.
 
 Is anyone else getting 0.00 or early exits since the site update around Oct 14–15? Hosts, could you check whether something changed in the scoring environment, like the gateway, the machines, or a runtime limit?
@@ -1134,9 +1134,9 @@ When deploying small edge models for regional or code-mixed languages, how do yo
 ---
 * **Research Note:** [Masmatix Innovations Insights](https://masmatixinnovations.co.uk/insights/)
 * **Agent Traces & Source Code:** [MHKhan50 on GitHub](https://github.com/MHKhan50)
----",technical_analysis,"pre-labelled by Claude, needs my review"
+---",open_question,pre-labelled by Claude; relabelled open_question under final rule (post asks something)
 "This won't be enough for the data extraction...
-Also if we were to waste personal money for this, why not Kaggle provide it and ringfence the assignment to external datasets @jazivxt?",complaint,"pre-labelled by Claude, needs my review"
+Also if we were to waste personal money for this, why not Kaggle provide it and ringfence the assignment to external datasets @jazivxt?",open_question,pre-labelled by Claude; relabelled open_question under final rule (post asks something)
 "Hi. The original (zero shot no finetune) TFMs improve the stack. When the stack already has the original TFMs, then adding the finetuned TFMs did not improve the stack further.",technical_analysis,"pre-labelled by Claude, needs my review"
 "Hi @ryanholbrook,
 
@@ -1396,12 +1396,12 @@ Plus, that whole “I'll only put together teams if you have a score of +0.94”
 
 Also, for someone whose first language isn't English, it's awful to have to read so much AI-generated text everywhere, it's just unintelligible. 
 
-When I first joined this site, I thought it was going to be pretty cool, but pretty soon I lost interest in participating in the forums and sharing my methodology (despite my position on the LB), because what’s the point? It seems like 90% of the traffic on this site is from agents. It’s such a relief to read posts from real people that it makes you wonder what this whole thing is turning into. And it's true that my main problem has nothing to do with whether AI is used or not, but that's certainly the impression it gives.",complaint,"pre-labelled by Claude, needs my review"
+When I first joined this site, I thought it was going to be pretty cool, but pretty soon I lost interest in participating in the forums and sharing my methodology (despite my position on the LB), because what’s the point? It seems like 90% of the traffic on this site is from agents. It’s such a relief to read posts from real people that it makes you wonder what this whole thing is turning into. And it's true that my main problem has nothing to do with whether AI is used or not, but that's certainly the impression it gives.",open_question,pre-labelled by Claude; relabelled open_question under final rule (post asks something)
 "Could you test whether this scale flags public/private rank reversals among close submission pairs from completed AUC episodes, when both predictions and scores are available? That would show whether it helps in practice, though it would not isolate row-sampling noise.",open_question,"pre-labelled by Claude, needs my review"
 "Thanks for running this. In the simulation, reversals fall from 15% for z between 1.5 and 2 to 0.7% for z ≥ 3. It will be useful to compare these rates with public/private pairs after S6E10 closes.",technical_analysis,"pre-labelled by Claude, needs my review"
 "@macruzbar The Code section is now flooded with low-effort ensemble notebooks that offer little to no originality, making it increasingly difficult to find genuinely valuable notebooks.
 
-Could Kaggle give users the ability to downvote this kind of low-quality content?",complaint,"pre-labelled by Claude, needs my review; hard case: complaint vs open_question (venting + a request)"
+Could Kaggle give users the ability to downvote this kind of low-quality content?",open_question,pre-labelled by Claude; relabelled open_question under final rule (post asks something); hard case: complaint vs open_question (venting + a request)
 "Nice audit. We see the same in our heatmap: em-dash rates are 79-82% for the two GLM models and 63-83% for the Claude models, while all four Gemini models are at 0-1%. One more thing that matters if you add external data: proxy-generated Gemini text often has em dashes (13-43% depending on reasoning settings, per the dataset notes of lucasboesen and dophuchung), so the ""Gemini never uses em dashes"" rule in train can flip.",technical_analysis,"pre-labelled by Claude, needs my review"
 "Thanks to Kaggle for another fun Playground episode. Team A.Ş finished **17th of 3,575** on the private leaderboard (**0.94571**). The whole pipeline of our own three models is in a public notebook that runs end-to-end on a Kaggle T4 in 3.3 hours: **[17th Place Solution – Playground S6E9](https://www.kaggle.com/code/ahmetbugrahanaltunok/17th-place-solution-playground-s6e9)**.
 
@@ -1538,7 +1538,7 @@ What strategies (such as domain-specific prompt prefixing or vocabulary biasing 
 ---
 * **Full Audio Evaluation:** [Masmatix Innovations Insights](https://masmatixinnovations.co.uk/insights/)
 * **Transcripts & Benchmark Scripts:** [MHKhan50 on GitHub](https://github.com/MHKhan50)
----",technical_analysis,"pre-labelled by Claude, needs my review"
+---",open_question,pre-labelled by Claude; relabelled open_question under final rule (post asks something)
 "I think a better approach would be to freeze all notebook achievements as of a certain date. All achievements earned before that cutoff would be retained—medals, titles, the fancy GM profile frames—but no new notebook achievements would be added after that date. This change should be implemented in a way that makes players who have genuinely contributed to Kaggle's open-source ecosystem feel respected.
 Five years ago, earning a Notebook GM title carried real weight, but today it's worth re-examining. Kaggle has already removed the discussion achievements and titles, yet nowadays, some widely recognized contributions—insightful comments, healthy commentary that guides the direction of competitions—are actually more valuable than AI-generated code, or code that farms scores and undermines leaderboard fairness.",complaint,"pre-labelled by Claude, needs my review"
 "How to get good training labels? One way to look at this Kaggle competition is to create soft/hard study-level labels to train an image MRI model.  
@@ -2289,12 +2289,12 @@ Only one knob really mattered: plr_sigma, the scale of RealMLP's periodic numeri
 
 Final config: the S6E8 parameter set with n_epochs=20 and plr_sigma=32; everything else unchanged. In the feature-engineering table we reused these settings as is (no re-tuning on the 30-column view).",technical_analysis,"pre-labelled by Claude, needs my review"
 i train a mri model on Qwen3.5-2b JEV to mimick his behaviour. then submit this with the other mri model. Ensemble at 50/50 LB is 0.926,technical_analysis,"pre-labelled by Claude, needs my review"
-"waht is happening at the public notebook? everyone is using other works as prior. It is like BC and RL in simulator competition. The risk is ""is his prior an overfitting one?""",complaint,"pre-labelled by Claude, needs my review"
+"waht is happening at the public notebook? everyone is using other works as prior. It is like BC and RL in simulator competition. The risk is ""is his prior an overfitting one?""",open_question,pre-labelled by Claude; relabelled open_question under final rule (post asks something)
 "I opened a notebook and this happened, I don’t know how to solve it
 
 Firebase: No Firebase App '[DEFAULT]' has been created - call Firebase App.initializeApp() (app/no-app).",open_question,"pre-labelled by Claude, needs my review"
 The Biggest Bug is the limited RAM available and the excess data storage capacity required to participate in most competitions,complaint,"pre-labelled by Claude, needs my review"
-"what is your approaches throughput ? at around 300-500 tps i had ~19-20 % score. only attempted half the dataset. so practically 40 % is possible with 600-800 tps, 1 attempt per task. paired with a helpful harness, i think more is possible. more attempts certainly helps, as manier times attempts dont end up with a answer. but when done, theyre mostly right. it just takes 128k - 256k context window and lot of stuff to optimally perform at the fullest level. contestnats must be juicing every ounce at this point.",technical_analysis,"pre-labelled by Claude, needs my review"
+"what is your approaches throughput ? at around 300-500 tps i had ~19-20 % score. only attempted half the dataset. so practically 40 % is possible with 600-800 tps, 1 attempt per task. paired with a helpful harness, i think more is possible. more attempts certainly helps, as manier times attempts dont end up with a answer. but when done, theyre mostly right. it just takes 128k - 256k context window and lot of stuff to optimally perform at the fullest level. contestnats must be juicing every ounce at this point.",open_question,pre-labelled by Claude; relabelled open_question under final rule (post asks something)
 "Are there any upcoming meetups in the Middle East, or any activists in Jordan who might be interested in this kind of gathering?",open_question,"pre-labelled by Claude, needs my review"
 "Hi @ryanholbrook Thanks! Two quick clarifications that probably matter for everyone:
 
@@ -2328,8 +2328,8 @@ My earlier submission (Version 3) completed evaluation successfully with a publi
 Could you please check whether this latest submission failed due to a scoring infrastructure issue or a specific configuration problem, and advise whether it can be rerun?",open_question,"pre-labelled by Claude, needs my review"
 "I mean that is kinda my point, we could try to enforce reasonable external resources within competitions, or at the very least avoid creating situations like this where extra data would obviously give an advantage all while being expensive to generate. 
 
-LeBron is an amazing basketball player because of preparation and training, just the same way you are a talented GM due to preparation and training. When we actually get to the game, or competition in this case, everyone should be on equal ground. LeBron is not given any advantage in game like a shorter 3pt line or an extra free throw, just the same way a kaggler shouldn’t get an advantage in game by having excessive GPU or data advantages. Is that really that whiny or unreasonable?",complaint,"pre-labelled by Claude, needs my review"
-"In CV my qwen harness at xhigh at full policy median 70k tokens for pass@2 (so 35k per slot) gets %45 solves or about  52~ out of 120 averaged across different runs. The issue is I cant fit it in the box, something I havent tried yet is different reasoning efforts and different ensembles. I really would like to know what the teams in higher spots are doing, especially relevant if anyone would like to answer or support: Do you use one long attempt or multiple attempts? How do you achieve ensemble diversity? Did you finetune the model? Did you have a significant kernel or inference improvement for L4 x 4 setup? Can the qwen harness reach %60 by itself?  Do you use the nvarc solver at all? I managed to get it to run on all 240 tasks in about 4 hours so I think it might help to ensemble with it as it has more solves per minute.",technical_analysis,"pre-labelled by Claude, needs my review"
+LeBron is an amazing basketball player because of preparation and training, just the same way you are a talented GM due to preparation and training. When we actually get to the game, or competition in this case, everyone should be on equal ground. LeBron is not given any advantage in game like a shorter 3pt line or an extra free throw, just the same way a kaggler shouldn’t get an advantage in game by having excessive GPU or data advantages. Is that really that whiny or unreasonable?",open_question,pre-labelled by Claude; relabelled open_question under final rule (post asks something)
+"In CV my qwen harness at xhigh at full policy median 70k tokens for pass@2 (so 35k per slot) gets %45 solves or about  52~ out of 120 averaged across different runs. The issue is I cant fit it in the box, something I havent tried yet is different reasoning efforts and different ensembles. I really would like to know what the teams in higher spots are doing, especially relevant if anyone would like to answer or support: Do you use one long attempt or multiple attempts? How do you achieve ensemble diversity? Did you finetune the model? Did you have a significant kernel or inference improvement for L4 x 4 setup? Can the qwen harness reach %60 by itself?  Do you use the nvarc solver at all? I managed to get it to run on all 240 tasks in about 4 hours so I think it might help to ensemble with it as it has more solves per minute.",open_question,pre-labelled by Claude; relabelled open_question under final rule (post asks something)
 "What if we want to report a typo or similar error in the documentation? It's very unclear how to do that. In an open-source project, I would just make a pull request. It's unclear what I should do on Kaggle. 
 
 For example: In Step 3 of the exercise associated with [the third part of the Intro to Machine Learning tutorial](https://www.kaggle.com/dansbecker/your-first-machine-learning-model), there's a typo. It says:
@@ -2866,7 +2866,7 @@ Since these metrics rely on low-cost sensor networks rather than reference-grade
 ---
 * **Full Data Analysis:** [Masmatix Innovations Insights](https://masmatixinnovations.co.uk/insights/)
 * **Aggregation Code & Open Datasets:** [MHKhan50 on GitHub](https://github.com/MHKhan50)
----",technical_analysis,"pre-labelled by Claude, needs my review"
+---",open_question,pre-labelled by Claude; relabelled open_question under final rule (post asks something)
 "Error loading directory content.
 - Create a directory within a directory,
 - Add files(programmatically)
@@ -2885,7 +2885,7 @@ OutputFileTreeManager.tsxx:60 Uncaught (in promise) TypeError: Cannot read prope
     at Generator.next (runtime.jss:119:21)
     at wge (databundleV3Converters.tss:210:18)
     at a (databundleV3Converters.tss:210:18)",open_question,"pre-labelled by Claude, needs my review"
-Wondering if anyone is actually reading through the LLM generated wall of text or summarizing in <30 words?,complaint,"pre-labelled by Claude, needs my review"
+Wondering if anyone is actually reading through the LLM generated wall of text or summarizing in <30 words?,open_question,pre-labelled by Claude; relabelled open_question under final rule (post asks something)
 "I'm Yuan800, a high school junior, and this was my first time leading a team in a Kaggle competition. All the rented compute for our whole competition, GPU and CPU, came to **$59.78**. Each of our final models was trained from scratch on one rented RTX 5090, and the larger one took about 4.5 hours. Our final agents use no self-play and no RL, and every evaluation ran on CPU. This post explains how our plain behaviour-cloning (BC) agent got into the gold range, and what we learned on the way.
 
 ## 1. What we did
@@ -3274,4 +3274,4 @@ Data and/or research tools used in the preparation of this manuscript were obtai
 
 [Shared NDA Study](https://nda.nih.gov/study.html?id=3407) · [DOI: 10.15154/0hcg-f676](https://doi.org/10.15154/0hcg-f676). Official acknowledgement source: [NDA manuscript preparation](https://nda.nih.gov/nda/manuscript-preparation).
 
-What worked for your models, and what looked promising locally but failed on the leaderboard? Please share useful negative results as well as improvements—especially experiences with weak labels, crop geometry, and plane-aware augmentation.",technical_analysis,"pre-labelled by Claude, needs my review"
+What worked for your models, and what looked promising locally but failed on the leaderboard? Please share useful negative results as well as improvements—especially experiences with weak labels, crop geometry, and plane-aware augmentation.",open_question,pre-labelled by Claude; relabelled open_question under final rule (post asks something)

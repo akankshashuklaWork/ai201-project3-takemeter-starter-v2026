@@ -2,9 +2,7 @@
 #
 # Copy these from your README so the baseline is judged on exactly the
 # definitions you wrote. baseline.py reads this file.
-#
-# Delete the examples below and put yours in.
 
 technical_analysis: a finished technical write-up that reports a concrete result from actually building or training something
-open_question: a question, technical or not, where the outcome is still unresolved and the tone is neutral
-complaint: a cynical or frustrated post about the platform or community that vents or demands broad change
+open_question: a post that asks something, technical or not, such as a question, a request for help or a request for a fix; it counts even if it also vents or reports numbers
+complaint: a cynical or frustrated post about the platform or community that vents or demands broad change and asks nothing
