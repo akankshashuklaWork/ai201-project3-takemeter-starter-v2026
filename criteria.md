@@ -79,6 +79,8 @@ No single label will make up more than 65% of the 200 labeled posts.
 
 **Why this target:** The project's hard cap is 70%; I'm setting my own target 5 points under that as a safety margin, since `technical_analysis` is the label I'd expect to dominate by default if I only collect from the most visible/upvoted threads. Staying under 65% means I had to deliberately go find enough `complaint` and `open_question` posts rather than taking whatever came easiest.
 
+> **Note added in unit 5, before any results were analysed (original criterion unchanged):** I ended with 161 labeled posts, not 200, because Kaggle limited how many posts I could collect (details in the README). The largest label is `open_question` at 55%, which is under the 65% target.
+
 ---
 
 ## 4. Consistency
@@ -88,6 +90,8 @@ No single label will make up more than 65% of the 200 labeled posts.
 When I label the same 20 posts twice — once "cold" in Milestone 4 and once again later, without looking at my first pass — I will agree with myself on at least 80% of them.
 
 **Why this target:** My hardest boundary (`complaint` vs. `open_question`) is a judgment call about tone and intent, not a hard fact, so I don't expect 100% self-agreement. 80% means the decision rule I wrote is actually usable in practice, not just on the one borderline example I used to write it.
+
+> **Note added in unit 5, before any results were analysed (original criterion unchanged):** I have no cold labels of my own. Claude labelled the 20 sample rows a second time from their text alone and matched its first pass on 20 of 20, but that is the same labeller twice, so it cannot test this criterion. As written, this criterion can't be measured. In unit 6 I expect to revise it, underneath this note, to use the agreement check against the staff labels.
 
 ---
 

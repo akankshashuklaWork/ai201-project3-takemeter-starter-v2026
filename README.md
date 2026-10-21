@@ -181,7 +181,7 @@ I committed `results.json` and `test_split.csv` and have not analysed them yet. 
 
 - *What I asked for:* I asked Claude to write my five acceptance criteria for me.
 - *What came back:* Five criteria with targets and short reasons (accuracy at least 0.65, every label's F1 at least 0.55, no label above 65%, 80% self-agreement on my 20 cold posts, and 85% accuracy on confident predictions).
-- *What I changed:* <!-- TODO (Akanksha): say what you changed, or what you decided to keep and why. The file `criteria.md` marks these as Claude's drafts. Note that criterion 3 still says "200 labeled posts" and I have 161. -->
+- *What I changed:* I did not change any of the five targets or reasons. They stand as Claude drafted them and as I filed them before training. I also asked Claude for one reason each target might turn out too easy and one reason it might turn out too hard, and I made no number changes from that. Two criteria no longer fit my final data (criterion 3 says 200 posts and I have 161; criterion 4 needs cold labels that I don't have). I recorded that in `criteria.md` as notes under each criterion, without editing the original lines.
 
 **Moment 2: collecting and pre-labelling the posts.**
 
