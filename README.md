@@ -42,8 +42,7 @@
 <!-- Your community, and what your classifier sorts posts into. Three or four
      sentences. -->
 
-<!-- DRAFT — check this matches how you'd actually describe it, and personalize the wording before submitting. -->
-TakeMeter sorts posts from **Kaggle Discussions**, the forum where Kaggle users talk about competitions, the platform, and machine learning in general. My classifier sorts each post into one of three labels: `technical_analysis` (a finished write-up reporting a concrete result from building or training something), `open_question` (any post that asks something and is still unresolved, even if it also vents or reports numbers), or `complaint` (a frustrated or cynical post about the platform or community that asks nothing).
+TakeMeter sorts posts from **Kaggle Discussions**, the public forum where Kagglers talk about competitions, the platform and machine learning. It puts each post into one of three labels. `technical_analysis` is a finished write-up that reports a concrete result from building or training something. `open_question` is any post that asks something and is still unresolved, even if it also vents or reports numbers. `complaint` is a frustrated or cynical post about the platform or community that asks nothing. I built it as a fine-tuned `distilbert-base-uncased` classifier on 161 labelled posts.
 
 
 ---
