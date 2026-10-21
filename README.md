@@ -109,7 +109,9 @@ If the post asks something — a question, a request for help, or a request for 
 
 I skipped posts that fit none of my three labels (praise like "great write-up!", welcome messages, staff announcements, jokes, arguments between two users), posts in other languages (my model is English-only) and the very long Seaborn tutorials. So the file is not a random sample of Kaggle Discussions. It is a sample of posts that fit my labels, and that is a limit on what the classifier can claim.
 
-**How I labelled them:** Claude collected the posts and pre-labelled all 161 using my label definitions and my complaint-vs-open_question decision rule. After my blind stress test I changed the rule to "does the post ask something?", and Claude re-labelled the 17 rows that contained a question (marked in their `note`). Every row's `note` column says `pre-labelled by Claude, needs my review`. <!-- TODO (Akanksha): read every row, correct what you disagree with, and update the note column and the counts below. Then label the 20 rows in cold_20_to_label.csv yourself WITHOUT looking at labels.csv, put your labels into labels.csv, and set their note to `cold`. Re-run notebook sections 2-5 and re-commit results.json and test_split.csv. -->
+**How I labelled them:** Claude collected the posts and pre-labelled all 161 using my label definitions and my complaint-vs-open_question decision rule. After my blind stress test I changed the rule to "does the post ask something?", and Claude re-labelled the 17 rows that contained a question. Claude then re-read all 161 rows in a second pass against the final rule and found nothing else to change. The `note` column of every row says this.
+
+**No cold labels:** The brief asks for 20 rows labelled cold, by me, with no help. I did not do that. Instead Claude labelled the 20 rows from `cold_20_to_label.csv` (chosen at random with a fixed seed) again from their text alone and matched its first pass on 20 of 20. That number means little, because it is the same labeller twice and Claude had labelled those rows before. Those rows are marked in `note` as NOT cold labels by me. I also did not read and correct the rows myself, so the dataset has no human-checked rows. <!-- TODO (Akanksha): if you do read the rows or label any cold, edit this paragraph and the `note` column to say so. -->
 
 I did not reach the 200 rows the brief asks for. I got 161, because Kaggle rate-limited my collection (it refused requests after I fetched too quickly) and because many posts fit none of my labels. Under the brief's stop rule that is above the 150-row floor.
 
@@ -185,7 +187,7 @@ I committed `results.json` and `test_split.csv` and have not analysed them yet. 
 
 - *What I asked for:* I asked Claude to collect public Kaggle Discussions posts, aiming for about 70 per label, and to pre-label them using my definitions and decision rule.
 - *What came back:* 161 posts from Kaggle's discussion pages, each with a label. Claude also noticed that one of my `open_question` examples was not a question and swapped in a real one.
-- *What I changed:* <!-- TODO (Akanksha): describe the rows you corrected and how many. -->
+- *What I changed:* Nothing by hand. Claude re-labelled 17 rows after my stress test changed the decision rule, and then re-checked all 161 rows.
 
 **Moment 3 (extra): stress-testing my labels.**
 
@@ -193,7 +195,7 @@ I committed `results.json` and `test_split.csv` and have not analysed them yet. 
 - *What came back:* 8 made-up posts (not real Kaggle posts). I called all of them `open_question` except the one with no question in it, and Claude's own read split from mine on 4 of 8.
 - *What I changed:* I replaced my written decision rule with the rule I actually apply ("if the post asks something, it's `open_question`") and re-labelled the 17 affected rows in `labels.csv`. I did not adopt the two tie-breakers Claude suggested.
 
-**Pre-labelling disclosure:** All 161 rows were pre-labelled by Claude. <!-- TODO (Akanksha): confirm you read and corrected every row, and name the 20 rows you labelled cold. -->
+**Pre-labelling disclosure:** All 161 rows were pre-labelled by Claude, and Claude also did the second-pass review. I did not label any rows cold myself and did not review the rows row by row; see "No cold labels" in The Dataset.
 
 <!-- ═══════════════════════ UNIT 6 — THE TEST ═══════════════════════
 

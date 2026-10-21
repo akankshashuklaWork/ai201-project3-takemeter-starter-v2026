@@ -1,5 +1,5 @@
 text,label,note
-"At the same time, the Smart Buildings competition doesn’t award medals, even though it’s genuinely interesting and doesn’t require spending $5k on data just to get started.",complaint,"pre-labelled by Claude, needs my review"
+"At the same time, the Smart Buildings competition doesn’t award medals, even though it’s genuinely interesting and doesn’t require spending $5k on data just to get started.",complaint,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "*5th place (gold) in [Kaggriculture](https://www.kaggle.com/competitions/kaggriculture), team 有辣条有权.*
 
 | Looking for | Go to |
@@ -92,9 +92,9 @@ Everything needed to rebuild both final submissions from the Kaggle episodes is 
 | [`model2-n-flow/`](https://github.com/definitelynotrussellkirk-bit/kaggriculture-sft/tree/main/model2-n-flow) | Model 2 training code and every stage from random init to the shipped checkpoint |
 | [`evaluation/`](https://github.com/definitelynotrussellkirk-bit/kaggriculture-sft/tree/main/evaluation) | paired-game comparison on shared worlds, including the shop-fixed version, and the records behind both release decisions |
 | [`figures/`](https://github.com/definitelynotrussellkirk-bit/kaggriculture-sft/tree/main/figures) | scripts and data behind the figures in this write-up |
-| [`tools/`](https://github.com/definitelynotrussellkirk-bit/kaggriculture-sft/tree/main/tools) | `list_features.py`, which generates [FEATURES.md](https://github.com/definitelynotrussellkirk-bit/kaggriculture-sft/blob/main/FEATURES.md) from the code |",technical_analysis,"pre-labelled by Claude, needs my review"
-Anyone else new to kaggle- data analytics any advice,open_question,"pre-labelled by Claude, needs my review"
-It is genuinely sad to think about how the vast majority of hardworking participants’ work suddenly means nothing.,complaint,"pre-labelled by Claude, needs my review"
+| [`tools/`](https://github.com/definitelynotrussellkirk-bit/kaggriculture-sft/tree/main/tools) | `list_features.py`, which generates [FEATURES.md](https://github.com/definitelynotrussellkirk-bit/kaggriculture-sft/blob/main/FEATURES.md) from the code |",technical_analysis,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
+Anyone else new to kaggle- data analytics any advice,open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
+It is genuinely sad to think about how the vast majority of hardworking participants’ work suddenly means nothing.,complaint,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "**Notebook with all runs, configs and adapter:** [https://www.kaggle.com/code/icfoer/gemma4-developer-agent-lora-200-test]
 
 ---
@@ -246,7 +246,7 @@ I will be straight with you: I am a bit tired of this project, and I have a day 
 If you do find something that beats the base model, I would genuinely like to read about it.
 ---
 
-**Adapter here:** [https://www.kaggle.com/code/icfoer/gemma4-developer-agent-lora-200-test]",technical_analysis,"pre-labelled by Claude, needs my review"
+**Adapter here:** [https://www.kaggle.com/code/icfoer/gemma4-developer-agent-lora-200-test]",technical_analysis,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "The advantage of TFMs (tabular foundation models) is that we do not need to feature engineer nor train them. We just immediately predict test data using them without having to do anything! Current TFMs perform very well as is, discussion [here][1].
 
 # Finetuning
@@ -271,8 +271,8 @@ Common settings: AdamW lr 1e-5 (Kumo large 3e-6; wd 0.01), cosine schedule with 
 
 After finetuning, each TFM is then inferred with `n_estimators=8`, `full context`, and `mixed precision`. 
 
-[1]: https://www.kaggle.com/competitions/playground-series-s6e10/discussion/746363",technical_analysis,"pre-labelled by Claude, needs my review"
-As soon as I saw .gov I knew it was going to be miserable. They definitely have outdone themselves on this one,complaint,"pre-labelled by Claude, needs my review"
+[1]: https://www.kaggle.com/competitions/playground-series-s6e10/discussion/746363",technical_analysis,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
+As soon as I saw .gov I knew it was going to be miserable. They definitely have outdone themselves on this one,complaint,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "# 70th place: Replay BC, teacher selection, and a tomato rule
 
 Our team, **NSK_54**, finished **70th out of 10,148 teams**. This write-up focuses on the replay-BC agent that set our final score: **4883.6 private**, with a public rating of **2612.0**. The private and public ratings use different scales.
@@ -417,7 +417,7 @@ The experiments we would prioritize earlier next time are teacher-version audits
 
 ## Acknowledgements
 
-Thanks to the hosts and all teams sharing public replays, especially DSM, DECEM, and yuto083 for the final specialist demonstrations. Earlier stages also benefited from other public leaders. Our separate scripted-baseline line used Ahmed Berat Ozer's V43 agent, shared through sdy623's notebook under Apache-2.0.",technical_analysis,"pre-labelled by Claude, needs my review"
+Thanks to the hosts and all teams sharing public replays, especially DSM, DECEM, and yuto083 for the final specialist demonstrations. Earlier stages also benefited from other public leaders. Our separate scripted-baseline line used Ahmed Berat Ozer's V43 agent, shared through sdy623's notebook under Apache-2.0.",technical_analysis,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "One thing that keeps coming back is low-effort. 
 
 What is low effort ? Is spending 10k in Claude compute (which is what Eliosli claims it has costed them) + probably just as much in GPU low effort ? 
@@ -428,7 +428,7 @@ So the question becomes, who even gets a medal, if 80% of silver, and all of bro
 
 It also makes it harder for people to afford competing. Silver used to mean something, so does Kaggle Expert, Kaggle Master. 
 
-If simply copying a notebook will give you the same title, or even a better chance than someone truly learning and competing, does it even mean something ?",open_question,pre-labelled by Claude; relabelled open_question under final rule (post asks something)
+If simply copying a notebook will give you the same title, or even a better chance than someone truly learning and competing, does it even mean something ?",open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me) (relabelled open_question under the final rule)"
 "# Overview
 
 My solution used heuristics and search, without machine learning. It combined an opening book derived from top players' public replays with daily planning based mainly on simulated annealing and beam search. For the final submission, the opening book came from the public replays of **M & M & P & Q**.
@@ -459,7 +459,7 @@ I also used Astra and GPT-5.6 Sol with xhigh reasoning, partly because of usage 
 
 Codex and Work had very restrictive usage limits, while chat was unlimited except for Pro mode. I therefore set up GitHub Actions so ChatGPT could launch cloud instances with many CPU cores and run large batches of matches between agent versions directly from the chat interface.
 
-*I drafted this writeup in Japanese, my native language, then used GPT-6.1-Sol to translate it into English and polish the wording and formatting. I reviewed and edited the English version before publishing it.*",technical_analysis,"pre-labelled by Claude, needs my review"
+*I drafted this writeup in Japanese, my native language, then used GPT-6.1-Sol to translate it into English and polish the wording and formatting. I reviewed and edited the English version before publishing it.*",technical_analysis,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "A good farm layout is only the beginning of a Kaggriculture strategy. Animals need feed, harvests need transport, workers need to arrive at the right time, and products need to reach the market. A policy can make a sensible choice at every individual station and still fail to run the farm as a whole.
 
 Our approach is to learn that complete policy from replays. A single **22.4-million-parameter network** predicts the farmer's command, the hired workers' commands, and an ordered list of market instructions. The released agent uses supervised behavior cloning, with a small final-turn liquidation rule. It does not choose among hand-written farming plans.
@@ -604,10 +604,10 @@ Replay prediction and competitive strength answer different questions. Held-out 
 
 Behavior cloning also has a ceiling: it approximates observed decisions, encounters states absent from its demonstrations, and can compound its own errors. The explanations above motivate the architecture; they are not controlled ablations assigning a win-rate gain to each component.
 
-The transferable idea is to make the **structure of the execution problem** visible to learning. Local spatial features describe the job, daily memory supplies continuity, attention connects workers, and structured decoding handles commands and shared resources. This turns replay imitation from isolated action prediction into a practical way to learn how to run the whole farm.",technical_analysis,"pre-labelled by Claude, needs my review"
-Someone who has 1M training examples per model will find more patterns than someone with 100K training examples per model. Is paying model providers for data generation going to be the key to winning?,open_question,"pre-labelled by Claude, needs my review"
+The transferable idea is to make the **structure of the execution problem** visible to learning. Local spatial features describe the job, daily memory supplies continuity, attention connects workers, and structured decoding handles commands and shared resources. This turns replay imitation from isolated action prediction into a practical way to learn how to run the whole farm.",technical_analysis,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
+Someone who has 1M training examples per model will find more patterns than someone with 100K training examples per model. Is paying model providers for data generation going to be the key to winning?,open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "Hi Kaggle Team, 
-Over the past few weeks, there has been an unprecedented surge in the TPU execution queue, with wait times regularly stretching past 14 hours and the backlog spiking to 500+ users and near 1000 now.  Previously peak queues hovered around 30 to 50 users. The current extreme capacity crunch makes it nearly impossible for legitimate data scientists, learning students, and competition participants to run interactive TPU sessions or get background commits executed in a reasonable timeframe.",complaint,"pre-labelled by Claude, needs my review"
+Over the past few weeks, there has been an unprecedented surge in the TPU execution queue, with wait times regularly stretching past 14 hours and the backlog spiking to 500+ users and near 1000 now.  Previously peak queues hovered around 30 to 50 users. The current extreme capacity crunch makes it nearly impossible for legitimate data scientists, learning students, and competition participants to run interactive TPU sessions or get background commits executed in a reasonable timeframe.",complaint,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "Hello all,
 I am Sriram. I recently gave a short (2–3 day) hackathon on credit default prediction (binary target, ROC-AUC, monthly history per customer). I am looking for advice on where I went wrong.
 
@@ -625,9 +625,9 @@ Questions:
 2. How do i imrpove in the next time in this type of hackathons.
 3. How do i know even if the model is underfitting also 
 
-Thanks.",open_question,"pre-labelled by Claude, needs my review"
-"To be honest, I don't even understand the point of this competition—after all, aren't these companies just distilling each other's models?  (These AI companies are accusing each other on social media like this.)",open_question,pre-labelled by Claude; relabelled open_question under final rule (post asks something)
-"Really clear write-up. Since the random-init backbone matched pretrained Qwen (0.960436 vs 0.960444), it seems the gain comes from the architecture and not from language pretraining. Did you try removing the causal mask so CLS-style attention sees all features bidirectionally? That might remove the need for order shuffling, or at least reduce how much it matters.",open_question,"pre-labelled by Claude, needs my review; hard case: technical_analysis vs open_question (analysis then a question)"
+Thanks.",open_question,"pre-labelled by Claude; relabelled from the text alone in a second pass by Claude (same labeller, so NOT a cold label by me)"
+"To be honest, I don't even understand the point of this competition—after all, aren't these companies just distilling each other's models?  (These AI companies are accusing each other on social media like this.)",open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me) (relabelled open_question under the final rule)"
+"Really clear write-up. Since the random-init backbone matched pretrained Qwen (0.960436 vs 0.960444), it seems the gain comes from the architecture and not from language pretraining. Did you try removing the causal mask so CLS-style attention sees all features bidirectionally? That might remove the need for order shuffling, or at least reduce how much it matters.",open_question,"pre-labelled by Claude; relabelled from the text alone in a second pass by Claude (same labeller, so NOT a cold label by me); hard case: technical_analysis vs open_question (analysis then a question)"
 "Hi Kagglers! 👋
 
 In synthetic tabular competitions like S6E10 (CTGAN-generated), the natural temptation is to **blindly expand features**—generating hundreds of interaction terms, target encodings, frequency tables, and statistical aggregations.
@@ -698,9 +698,9 @@ Feel free to fork the code and inject these unpolluted tree predictions into you
 
 **If you found our ablation insights or 15-fold pipeline helpful, an upvote on the notebook and this discussion would be greatly appreciated!** 🚀
 
-Let me know in the comments: Have you observed feature dilution in your experiments, and how do you handle feature selection on CTGAN synthetic data?",open_question,pre-labelled by Claude; relabelled open_question under final rule (post asks something)
-Will there be a hard stop on release of high scoring notebooks now that we are entering the last week of the competition?,open_question,"pre-labelled by Claude, needs my review"
-"With almost 100% code being generated with coding agents lately, are notebook medals still relevant @cody11null? I think Kaggle could simply scrap off datasets and kernels tiers and resort to competitions only, like older times. If anyone wishes to share code, he/ she could do it in good faith and such public sharing could be put to rest (people deliberately sharing code like this are doing it just for votes and have no interest in competing anyway. With no votes and medals, these bad actors will naturally move off).",open_question,pre-labelled by Claude; relabelled open_question under final rule (post asks something)
+Let me know in the comments: Have you observed feature dilution in your experiments, and how do you handle feature selection on CTGAN synthetic data?",open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me) (relabelled open_question under the final rule)"
+Will there be a hard stop on release of high scoring notebooks now that we are entering the last week of the competition?,open_question,"pre-labelled by Claude; relabelled from the text alone in a second pass by Claude (same labeller, so NOT a cold label by me)"
+"With almost 100% code being generated with coding agents lately, are notebook medals still relevant @cody11null? I think Kaggle could simply scrap off datasets and kernels tiers and resort to competitions only, like older times. If anyone wishes to share code, he/ she could do it in good faith and such public sharing could be put to rest (people deliberately sharing code like this are doing it just for votes and have no interest in competing anyway. With no votes and medals, these bad actors will naturally move off).",open_question,"pre-labelled by Claude; relabelled from the text alone in a second pass by Claude (same labeller, so NOT a cold label by me) (relabelled open_question under the final rule)"
 "Some data on this question: we tried adding the public 18-model corpus (licensed rows only, ~15k texts) to a simple char+word TF-IDF + LinearSVC, and scored with GroupKFold by prompt on competition texts only.
 
 - competition data only: 0.326
@@ -709,17 +709,17 @@ Will there be a hard stop on release of high scoring notebooks now that we are e
 
 We saw the same direction with a stronger TF-IDF and with frozen Qwen3-8B embeddings. Our main suspect is the mismatch: competition texts have 0% line breaks and 0% bold, while 94% / 60% of the external answers do, and the external median length is 174 words vs 101. So ""more data"" may matter, but only if it looks like the host's data.
 
-Details and code: https://www.kaggle.com/code/mizuno0522/model-fingerprints-punctuation-external-data",technical_analysis,"pre-labelled by Claude, needs my review"
+Details and code: https://www.kaggle.com/code/mizuno0522/model-fingerprints-punctuation-external-data",technical_analysis,"pre-labelled by Claude; relabelled from the text alone in a second pass by Claude (same labeller, so NOT a cold label by me)"
 "Since the new website UI update, there is no longer a preview button when creating a discussion post. Could the preview button be restored? Thank you
 
-When editting a discussion, there is a Preview button. But when creating a new discussion, there is no Preview button.",open_question,"pre-labelled by Claude, needs my review"
-"The competition hosts should provide us with enough data, otherwise the winners might have to spend more than they win (and pay taxes).",complaint,"pre-labelled by Claude, needs my review"
+When editting a discussion, there is a Preview button. But when creating a new discussion, there is no Preview button.",open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
+"The competition hosts should provide us with enough data, otherwise the winners might have to spend more than they win (and pay taxes).",complaint,"pre-labelled by Claude; relabelled from the text alone in a second pass by Claude (same labeller, so NOT a cold label by me)"
 "Also did a local test on kaggle 2xT4 + **qwen3-8-27b-swift-1-5-w4a16** no-think+768 tokens (minimal custom inference setup) on 10 studies
 
 GOLD EVAL {'tag': 'native', 'macro_auc': 0.6064, 'n': 10, 'n_auc_labels': 12, 'ACL': 0.5, 'MCL': 0.9444, 'Medial Meniscus': 0.6905, 'Lateral Meniscus': 0.4583, 'Medial OA': 0.5938, 'Lateral OA': 0.6562, 'PF OA': 0.6, 'Effusion': 0.375, 'Synovitis': 0.625, ""Baker's"": 0.3333, 'Contusion': 0.5, 'Fracture': 1.0}
-[eng] gold eval in 3571s -> gold_preds.csv | macro_auc=0.6064",technical_analysis,"pre-labelled by Claude, needs my review"
-"@souvikdbiswas were u able to achieve 0.20 score by optmizing the prompts, subagents and skill configurations only ?",open_question,"pre-labelled by Claude, needs my review"
-"At first I included a summary of the labeled examples in the prompt. Then I tried passing the examples themselves, which lowered my local CV score by about 0.004 but raised my public lb score by about 0.002.",technical_analysis,"pre-labelled by Claude, needs my review"
+[eng] gold eval in 3571s -> gold_preds.csv | macro_auc=0.6064",technical_analysis,"pre-labelled by Claude; relabelled from the text alone in a second pass by Claude (same labeller, so NOT a cold label by me)"
+"@souvikdbiswas were u able to achieve 0.20 score by optmizing the prompts, subagents and skill configurations only ?",open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
+"At first I included a summary of the labeled examples in the prompt. Then I tried passing the examples themselves, which lowered my local CV score by about 0.004 but raised my public lb score by about 0.002.",technical_analysis,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "Yet again, we have another competition where low-effort public ensembles are being released with less than two weeks remaining, potentially allowing participants to secure medals through copy-paste submissions rather than their own work or understanding.
 
 I fully expect this to continue as the deadline approaches and based on the past year or more, I expect that Kaggle will do absolutely nothing to address it.
@@ -730,16 +730,16 @@ What I find most frustrating is not simply that this problem persists, but that 
 
 No system will be perfect, and I recognize that solutions involve trade-offs. But leaving participants without meaningful explanation while the same concerns recur competition after competition is difficult to justify.
 
-Kaggle should be a place where competitive performance, original work, and meaningful contributions are rewarded. Right now, the incentives are increasingly misaligned with those goals, and I would genuinely like to understand why.",open_question,pre-labelled by Claude; relabelled open_question under final rule (post asks something)
+Kaggle should be a place where competitive performance, original work, and meaningful contributions are rewarded. Right now, the incentives are increasingly misaligned with those goals, and I would genuinely like to understand why.",open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me) (relabelled open_question under the final rule)"
 "My last two submissions (Oct 16 and Oct 17 UTC) both scored 0.00 and were marked complete within about 4.5 hours of submitting, so they ended well before the 9 h limit. Both are Franzen's M2 SGLang notebook with small harness changes. A nearly identical version scored 26.92 on Oct 15, with the same harness patch and image pin and only two scheduler settings changed. Earlier variants scored 27 to 30, and the Save & Run commits still finish normally.
 
 Is anyone else getting 0.00 or early exits since the site update around Oct 14–15? Hosts, could you check whether something changed in the scoring environment, like the gateway, the machines, or a runtime limit?
 
-Slow∞Loop reported the same symptom here: https://www.kaggle.com/competitions/arc-prize-2026-arc-agi-3/discussion/750127",open_question,"pre-labelled by Claude, needs my review"
+Slow∞Loop reported the same symptom here: https://www.kaggle.com/competitions/arc-prize-2026-arc-agi-3/discussion/750127",open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "Using gpt-6-astra for labeling instantly burned through 100% of my quota, 2 resets, and about 50,000 out of free 62,500 credits
  
-I regret this so much. sooooooooooo expansive",complaint,"pre-labelled by Claude, needs my review"
-Hi everyone! I'm just beginning my learning journey into data analytics and would love to hear from this community. What was the very first project you worked on when you were starting out? Any study tips or direction would be amazing!,open_question,"pre-labelled by Claude, needs my review"
+I regret this so much. sooooooooooo expansive",complaint,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
+Hi everyone! I'm just beginning my learning journey into data analytics and would love to hear from this community. What was the very first project you worked on when you were starting out? Any study tips or direction would be amazing!,open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "Code, weights and reproduction instructions: https://github.com/KawattaTaido/kaggriculture-release (CC BY 4.0).
 
 Thank you to the organizers for hosting this competition.
@@ -969,7 +969,7 @@ slot of the pool) rose from 0.53 to ≈0.88.*
 | PPO stage 2 (3,570 iterations) | ≈17 h |
 | Total | ≈23 h on one RTX 5090 (≈17 s per PPO iteration) |
 | Prediction | ≈18 ms per turn locally; about 35 ms per turn and ≈35 s for the first turn (JIT compilation) on Kaggle's runtime, measured on an earlier submission. A game has 720 turns. |
-| Simplified model (BC only) | training ≈3.5 h; prediction as above |",technical_analysis,"pre-labelled by Claude, needs my review"
+| Simplified model (BC only) | training ≈3.5 h; prediction as above |",technical_analysis,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "**Final result: 573rd of 10,148 (top 5.6%), a bronze-range finish.** On the live ladder it ended 481st, inside silver; the final Bradley-Terry ranking over all two weeks of post-deadline games placed it 573rd. No trained model: the agent is a hand-written planner. I built it over eight weeks and it took five separate attempts to get there. This is the story of those attempts, how the final agent plays, and the things I'd do differently.
 
 Thanks to the organizers for a wonderful game, and to everyone whose replays, notebooks and write-ups taught me something. Credits are at the end.
@@ -1102,23 +1102,23 @@ Most of my time went into this, and it's where I'd start next time.
 - **HowardLeeTW**, whose opening I studied and tested early on.
 - The posts and notebooks that taught me the most after the fact: Rayk Kretzschmar's ""Findings from Zero to Top Meta"", Pilkwang Kim's ""Structured Economic Policy"", Yujin Cha's ""Six things I wish I'd known before trusting my local win rates"", Kirderf's leaderboard tracker, dzjiann's RL write-up, sdy623's ""Beyond 48-0"", and Chris Deotte's write-up and the comments under it.
 
-Happy to answer questions about any of it.",technical_analysis,"pre-labelled by Claude, needs my review"
-I agree completely. This competition should definitely be made eligible for medals. It'll improve both the participants' motivation to push further and the quality of their solutions (which is a benefit to organizers). I hope the Kaggle Staff and organizers will see this and do something about it.,complaint,"pre-labelled by Claude, needs my review"
+Happy to answer questions about any of it.",technical_analysis,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
+I agree completely. This competition should definitely be made eligible for medals. It'll improve both the participants' motivation to push further and the quality of their solutions (which is a benefit to organizers). I hope the Kaggle Staff and organizers will see this and do something about it.,complaint,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "Yes I completly agree.
 I really encourage kaggle staff to look upon this and take a action on it.
 Kaggle has alot of good staff and great minds I am certain that they will find a solution for this issue.
 
-I think that there should be a model that analyses the published notebook and only then it will be published. And if there is plagiarism then it would be never go public.",complaint,"pre-labelled by Claude, needs my review"
-"Idk, i did this for 800 of them, it got only around 80-90% correct, not good enough, im trying to get to around >97% on pseudolabelling so its not enough",technical_analysis,"pre-labelled by Claude, needs my review"
-"I really agree, I've also seen people just copying other Grandmaster's work in not only this competition but the Google Deepmind and Playground series! This is just so annoying!",complaint,"pre-labelled by Claude, needs my review"
+I think that there should be a model that analyses the published notebook and only then it will be published. And if there is plagiarism then it would be never go public.",complaint,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
+"Idk, i did this for 800 of them, it got only around 80-90% correct, not good enough, im trying to get to around >97% on pseudolabelling so its not enough",technical_analysis,"pre-labelled by Claude; relabelled from the text alone in a second pass by Claude (same labeller, so NOT a cold label by me)"
+"I really agree, I've also seen people just copying other Grandmaster's work in not only this competition but the Google Deepmind and Playground series! This is just so annoying!",complaint,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "Could the organizers clarify whether participants are allowed to generate additional training data by calling LLM APIs themselves? The provided training set contains only around 150 unique prompts, which is clearly quite limited.
 
-More specifically, how exactly will the ""Reasonableness Standard"" in Section 8.2 be defined and applied? Is there a specific cost threshold for API usage, and would generating additional training data through paid LLM APIs be considered acceptable under this standard?",open_question,"pre-labelled by Claude, needs my review"
+More specifically, how exactly will the ""Reasonableness Standard"" in Section 8.2 be defined and applied? Is there a specific cost threshold for API usage, and would generating additional training data through paid LLM APIs be considered acceptable under this standard?",open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "We are currently working on migrating around 75 Tableau workbooks into Power BI semantic models. While rebuilding the visuals is simple enough, converting hundreds of calculated fields and nested Level of Detail expressions—like FIXED, INCLUDE, & EXCLUDE—into equivalent DAX measures line-by-line is becoming a huge bottleneck.
 
 Manually refactoring these logic chains by hand is not only time-consuming, but it is also easy to introduce subtle context-transition errors between Tableau's engine and DAX (CALCULATE / ALLEXCEPT).
 
-Has anyone in the Kaggle community built Python script or used specialized converter tools to automate this metadata extraction and translation pass? Would love to hear how others handle bulk calculation migrations at scale.",open_question,"pre-labelled by Claude, needs my review"
+Has anyone in the Kaggle community built Python script or used specialized converter tools to automate this metadata extraction and translation pass? Would love to hear how others handle bulk calculation migrations at scale.",open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "While evaluating agentic frameworks (ReAct pattern) for domain-specific clinical documentation, I tested how effectively a small, local 3B model (Qwen2.5-3B running via Ollama on a MacBook M4) handles multi-step reasoning in code-mixed Roman Urdu (""Maryam ke kitne sessions baqi hain?"").
 
 Key empirical observations from our clinic pilot tests[cite: 5, 6, 7]:
@@ -1134,10 +1134,10 @@ When deploying small edge models for regional or code-mixed languages, how do yo
 ---
 * **Research Note:** [Masmatix Innovations Insights](https://masmatixinnovations.co.uk/insights/)
 * **Agent Traces & Source Code:** [MHKhan50 on GitHub](https://github.com/MHKhan50)
----",open_question,pre-labelled by Claude; relabelled open_question under final rule (post asks something)
+---",open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me) (relabelled open_question under the final rule)"
 "This won't be enough for the data extraction...
-Also if we were to waste personal money for this, why not Kaggle provide it and ringfence the assignment to external datasets @jazivxt?",open_question,pre-labelled by Claude; relabelled open_question under final rule (post asks something)
-"Hi. The original (zero shot no finetune) TFMs improve the stack. When the stack already has the original TFMs, then adding the finetuned TFMs did not improve the stack further.",technical_analysis,"pre-labelled by Claude, needs my review"
+Also if we were to waste personal money for this, why not Kaggle provide it and ringfence the assignment to external datasets @jazivxt?",open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me) (relabelled open_question under the final rule)"
+"Hi. The original (zero shot no finetune) TFMs improve the stack. When the stack already has the original TFMs, then adding the finetuned TFMs did not improve the stack further.",technical_analysis,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "Hi @ryanholbrook,
 
 Thanks again for clarifying the support for the new Gemma 4 variants!
@@ -1155,8 +1155,8 @@ It would also be helpful to confirm in the updated documentation:
 
 An updated README would help participants avoid validation errors and ensure reproducible experiments.
 
-Thanks for your support!",open_question,"pre-labelled by Claude, needs my review"
-Hi I can't edit notebooks anymore. The editor seems to be loading forever . Doesn't show any errors on the JS console either.,open_question,"pre-labelled by Claude, needs my review"
+Thanks for your support!",open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
+Hi I can't edit notebooks anymore. The editor seems to be loading forever . Doesn't show any errors on the JS console either.,open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "Hi everyone,
 
 For teams currently reaching 0.22 - 0.24 on the public leaderboard with single-agent configurations using gemma-4-31b-it-qat-w4a16-ct, I would appreciate community insights on a few architectural trade-offs:
@@ -1176,11 +1176,11 @@ Some benchmark tasks provide minimal context, such as a short title or an issue 
 5. Repository Structure Edge Cases
 Certain repositories test examples or tutorial code located in documentation directories rather than internal library modules. How does your agent differentiate between modifying core package internals versus documentation or example files?
 
-Thanks in advance for sharing your thoughts and experiences.",open_question,"pre-labelled by Claude, needs my review"
+Thanks in advance for sharing your thoughts and experiences.",open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "Good point. The ""Code"" section has turned into a monster. Most scripts are not only useless, but they're even impossible to read (even if you write code only through AI assistants, you can still task them with writing neatly and readably). 
-Kaggle made a mistake several years ago by introducing tiers for notebooks/discussions. They realized their mistake with discussions, let's see what happens with the Code section.",complaint,"pre-labelled by Claude, needs my review"
-Thank you for sharing! Have you checked what is correlation between models? are TFMs similar? are they differ from tree based or MLP models?,open_question,"pre-labelled by Claude, needs my review"
-"Agreed, this is a very good topic and should have been a medal competition. Due to this community status, I am unsure how many will actually participate here @asimandia",complaint,"pre-labelled by Claude, needs my review"
+Kaggle made a mistake several years ago by introducing tiers for notebooks/discussions. They realized their mistake with discussions, let's see what happens with the Code section.",complaint,"pre-labelled by Claude; relabelled from the text alone in a second pass by Claude (same labeller, so NOT a cold label by me)"
+Thank you for sharing! Have you checked what is correlation between models? are TFMs similar? are they differ from tree based or MLP models?,open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
+"Agreed, this is a very good topic and should have been a medal competition. Due to this community status, I am unsure how many will actually participate here @asimandia",complaint,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "Hi Team,
 
 I am reaching out to highlight an issue with my recent submission runtimes in The Gemma 4 Developer Agent Competition.
@@ -1193,32 +1193,32 @@ Notebook Title: Gamma4_DeveloperAgent_for submission_V4.0.0.0_ADK - Core-4_Intel
 
 I kindly request to look into this matter.
 
-Thank You.",open_question,"pre-labelled by Claude, needs my review"
-@ravi20076 Artificial because nobodys thinking and intelligence because everyone assumes the previous notebook did. Actually recursive copying creates artificial stupidity not intelligence lol,complaint,"pre-labelled by Claude, needs my review"
-"This is a latent problem now-a-days. Firstly, compute costs + agents expenses is an issue and such notebooks accentuate the problem even further. Unfortunately Kaggle won't do anything regarding this - that is the biggest problem @aelhajj",complaint,"pre-labelled by Claude, needs my review"
-what do you think the private LB will look like given we only have very few expert labelled data and we were mostly dependent on derived labels.,open_question,"pre-labelled by Claude, needs my review"
-Cool work and glad it was shared but I do kinda wish we just made it simple and said competition data only rather than having this weird gray area. I have been staying comp only and only just now making progress,complaint,"pre-labelled by Claude, needs my review"
-"I think the main point here is that the notebooks section is just 99% meaningless slop notebooks copied from each other that contribute nothing meaningful. The code section in every competition now is just 'high scoring notebooks' over genuine contributions. A year ago,  the code section would start off with some EDA and analysis notebooks, then some baselines,  and then some more baselines that have different approaches and then the public score would saturate there. Now , everyone just wants upvotes and all you see is forks of literally the same notebook(s) with ensemble weights changed by 0.01 that gives a 0.001 boost on the LB. Meaningful work seems to be completely overshadowed by these notebooks, and that's the real problem. I also see this issue creeping around in discussion threads, where people just post AI generated walls of text , despite there being no more discussion medals or progression system. It's quite sad honestly.",complaint,"pre-labelled by Claude, needs my review"
-"I’ve noticed that the leaderboard medals have disappeared. Is this a bug, or were they intentionally removed? Will they be brought back?",open_question,"pre-labelled by Claude, needs my review"
+Thank You.",open_question,"pre-labelled by Claude; relabelled from the text alone in a second pass by Claude (same labeller, so NOT a cold label by me)"
+@ravi20076 Artificial because nobodys thinking and intelligence because everyone assumes the previous notebook did. Actually recursive copying creates artificial stupidity not intelligence lol,complaint,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
+"This is a latent problem now-a-days. Firstly, compute costs + agents expenses is an issue and such notebooks accentuate the problem even further. Unfortunately Kaggle won't do anything regarding this - that is the biggest problem @aelhajj",complaint,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
+what do you think the private LB will look like given we only have very few expert labelled data and we were mostly dependent on derived labels.,open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
+Cool work and glad it was shared but I do kinda wish we just made it simple and said competition data only rather than having this weird gray area. I have been staying comp only and only just now making progress,complaint,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
+"I think the main point here is that the notebooks section is just 99% meaningless slop notebooks copied from each other that contribute nothing meaningful. The code section in every competition now is just 'high scoring notebooks' over genuine contributions. A year ago,  the code section would start off with some EDA and analysis notebooks, then some baselines,  and then some more baselines that have different approaches and then the public score would saturate there. Now , everyone just wants upvotes and all you see is forks of literally the same notebook(s) with ensemble weights changed by 0.01 that gives a 0.001 boost on the LB. Meaningful work seems to be completely overshadowed by these notebooks, and that's the real problem. I also see this issue creeping around in discussion threads, where people just post AI generated walls of text , despite there being no more discussion medals or progression system. It's quite sad honestly.",complaint,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
+"I’ve noticed that the leaderboard medals have disappeared. Is this a bug, or were they intentionally removed? Will they be brought back?",open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "Thank you for releasing both checkpoints. One result that might interest you: your 224-pixel / 0.8-crop
 checkpoint, mixed into the Raptor slot at 35% next to the 384 one, helped in both blends I tried. Displayed score
 unchanged (0.954, then 0.956), but rank 437 → 320 and 233 → 156. Different resolution and field of view seem to
 make it wrong on different studies. The notebook credits your work throughout:
-https://www.kaggle.com/code/varshithakolupuri/rsna-knee-one-unused-checkpoint-lifts-the-0-956",technical_analysis,"pre-labelled by Claude, needs my review"
-"@ryanholbrook  One question about timing: is the scorer's vLLM server configured exactly like the Getting Started notebook (tensor_parallel_size=4, max_model_len=32768, gpu_memory_utilization, prefix caching and any max_num_seqs settings), for every variant?",open_question,"pre-labelled by Claude, needs my review"
-"Yup I was thinking in the same direction. I'm almost certain no one bothers to upvote these high scoring notebooks, the automatic upvote after copying the notebook is what stacks up. If people actually upvote notebooks without making copies of it, that is a sign of a good contribution I feel.",complaint,"pre-labelled by Claude, needs my review"
-"I have been waiting in the TPU queue for almost 30 hours, but my notebook still hasn't started.",complaint,"pre-labelled by Claude, needs my review; hard case: complaint vs open_question (personal TPU wait, no ask)"
+https://www.kaggle.com/code/varshithakolupuri/rsna-knee-one-unused-checkpoint-lifts-the-0-956",technical_analysis,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
+"@ryanholbrook  One question about timing: is the scorer's vLLM server configured exactly like the Getting Started notebook (tensor_parallel_size=4, max_model_len=32768, gpu_memory_utilization, prefix caching and any max_num_seqs settings), for every variant?",open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
+"Yup I was thinking in the same direction. I'm almost certain no one bothers to upvote these high scoring notebooks, the automatic upvote after copying the notebook is what stacks up. If people actually upvote notebooks without making copies of it, that is a sign of a good contribution I feel.",complaint,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
+"I have been waiting in the TPU queue for almost 30 hours, but my notebook still hasn't started.",complaint,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me); hard case: complaint vs open_question (personal TPU wait, no ask)"
 "Hi, my subs are being queued for oven an hour now
 
 Anyone similar issue?
 
-UPD: they run, but after 5-6 hours in a queue. Idk if Kaggle prioritize certain kernels over others",open_question,"pre-labelled by Claude, needs my review"
+UPD: they run, but after 5-6 hours in a queue. Idk if Kaggle prioritize certain kernels over others",open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "Hi hosts, following up on this report.
 
 Will the boiler / hot-water tank accounting be patched before the final private re-run? If so, could you say roughly when, and whether the public leaderboard will be re-scored on the patched simulator so participants can see where they actually stand?
 If it is not patched, are submissions whose score depends on unbilled heating considered valid, or will they be excluded or re-scored at the final verification?
 Will the final private evaluation use exactly the same simulator code as the current public leaderboard? We want to make sure we're optimizing against the version that will decide the standings.
-We have deliberately kept our controller physically consistent (no reliance on the mismatch), so a clear ruling either way would help everyone plan their remaining submissions. Thank you!",open_question,"pre-labelled by Claude, needs my review"
+We have deliberately kept our controller physically consistent (no reliance on the mismatch), so a clear ruling either way would help everyone plan their remaining submissions. Thank you!",open_question,"pre-labelled by Claude; relabelled from the text alone in a second pass by Claude (same labeller, so NOT a cold label by me)"
 "First, I'd like to thank my teammates, **tetsuya** and **guoqin gu**. It was a pleasure taking part in this competition together. Thanks also to the hosts and everyone who shared strategies and experiences in the discussions.
 
 # Overview
@@ -1389,20 +1389,20 @@ Submission remained uncertain: a comparable model had not yet been tested on the
 
 # Acknowledgements
 
-Thanks again to **tetsuya** and **guoqin gu** for sharing this competition journey. Thanks to the hosts for the environment and replay access, and to the competitors who shared strategies, code and discussions. Strong replays provided the foundation for our final BC agent, and the community's work helped us throughout the competition.",technical_analysis,"pre-labelled by Claude, needs my review"
+Thanks again to **tetsuya** and **guoqin gu** for sharing this competition journey. Thanks to the hosts for the environment and replay access, and to the competitors who shared strategies, code and discussions. Strong replays provided the foundation for our final BC agent, and the community's work helped us throughout the competition.",technical_analysis,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "This is my first competition, and the experience has been a little strange. My biggest problem is that the ranking is kind of useless; if someone skilled (or a thief) posts their entire pipeline, including weights, suddenly what used to be a difference of, say, 100 spots becomes one of 1,000. What would the ranking look like if only unique contributions were evaluated? I know I wouldn’t be at the top because I’m kind of a newbie and I’m not interested in copying anyone, but that means I have no way of knowing how well I did.
 
 Plus, that whole “I'll only put together teams if you have a score of +0.94” thing seems stupid to me. Even if there's money for the top finishers, it takes all the fun out of this shared, collaborative project. Is winning medals or votes or whatever really that important?
 
 Also, for someone whose first language isn't English, it's awful to have to read so much AI-generated text everywhere, it's just unintelligible. 
 
-When I first joined this site, I thought it was going to be pretty cool, but pretty soon I lost interest in participating in the forums and sharing my methodology (despite my position on the LB), because what’s the point? It seems like 90% of the traffic on this site is from agents. It’s such a relief to read posts from real people that it makes you wonder what this whole thing is turning into. And it's true that my main problem has nothing to do with whether AI is used or not, but that's certainly the impression it gives.",open_question,pre-labelled by Claude; relabelled open_question under final rule (post asks something)
-"Could you test whether this scale flags public/private rank reversals among close submission pairs from completed AUC episodes, when both predictions and scores are available? That would show whether it helps in practice, though it would not isolate row-sampling noise.",open_question,"pre-labelled by Claude, needs my review"
-"Thanks for running this. In the simulation, reversals fall from 15% for z between 1.5 and 2 to 0.7% for z ≥ 3. It will be useful to compare these rates with public/private pairs after S6E10 closes.",technical_analysis,"pre-labelled by Claude, needs my review"
+When I first joined this site, I thought it was going to be pretty cool, but pretty soon I lost interest in participating in the forums and sharing my methodology (despite my position on the LB), because what’s the point? It seems like 90% of the traffic on this site is from agents. It’s such a relief to read posts from real people that it makes you wonder what this whole thing is turning into. And it's true that my main problem has nothing to do with whether AI is used or not, but that's certainly the impression it gives.",open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me) (relabelled open_question under the final rule)"
+"Could you test whether this scale flags public/private rank reversals among close submission pairs from completed AUC episodes, when both predictions and scores are available? That would show whether it helps in practice, though it would not isolate row-sampling noise.",open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
+"Thanks for running this. In the simulation, reversals fall from 15% for z between 1.5 and 2 to 0.7% for z ≥ 3. It will be useful to compare these rates with public/private pairs after S6E10 closes.",technical_analysis,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "@macruzbar The Code section is now flooded with low-effort ensemble notebooks that offer little to no originality, making it increasingly difficult to find genuinely valuable notebooks.
 
-Could Kaggle give users the ability to downvote this kind of low-quality content?",open_question,pre-labelled by Claude; relabelled open_question under final rule (post asks something); hard case: complaint vs open_question (venting + a request)
-"Nice audit. We see the same in our heatmap: em-dash rates are 79-82% for the two GLM models and 63-83% for the Claude models, while all four Gemini models are at 0-1%. One more thing that matters if you add external data: proxy-generated Gemini text often has em dashes (13-43% depending on reasoning settings, per the dataset notes of lucasboesen and dophuchung), so the ""Gemini never uses em dashes"" rule in train can flip.",technical_analysis,"pre-labelled by Claude, needs my review"
+Could Kaggle give users the ability to downvote this kind of low-quality content?",open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me) (relabelled open_question under the final rule); hard case: complaint vs open_question (venting + a request)"
+"Nice audit. We see the same in our heatmap: em-dash rates are 79-82% for the two GLM models and 63-83% for the Claude models, while all four Gemini models are at 0-1%. One more thing that matters if you add external data: proxy-generated Gemini text often has em dashes (13-43% depending on reasoning settings, per the dataset notes of lucasboesen and dophuchung), so the ""Gemini never uses em dashes"" rule in train can flip.",technical_analysis,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "Thanks to Kaggle for another fun Playground episode. Team A.Ş finished **17th of 3,575** on the private leaderboard (**0.94571**). The whole pipeline of our own three models is in a public notebook that runs end-to-end on a Kaggle T4 in 3.3 hours: **[17th Place Solution – Playground S6E9](https://www.kaggle.com/code/ahmetbugrahanaltunok/17th-place-solution-playground-s6e9)**.
 
 Convention: 1u = 1e-5 ROC AUC.
@@ -1505,12 +1505,12 @@ Public and private moved together at almost every step that changed what a model
 
 **Tools:** AI coding assistants (Claude Code, Codex) helped write code and run analyses; every number above comes from our own runs.
 
-Congratulations to Chris Deotte, Team Alicia, M & M, Prior and everyone who took part — see you in the next episode!",technical_analysis,"pre-labelled by Claude, needs my review"
+Congratulations to Chris Deotte, Team Alicia, M & M, Prior and everyone who took part — see you in the next episode!",technical_analysis,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "Hi hosts
 
 While checking our controller's energy balance, we found a case where the boiler's billed gas and the  heat the reheat coils receive do not match. A policy could use it to obtain heating that is not billed.  That would make some leaderboard scores reflect the accounting rather than control quality.
   
-We have sent the details through the Kaggle contact form instead of posting them here. Could you confirm you received them, and let participants know whether the simulator will be patched before the final re-run?",open_question,"pre-labelled by Claude, needs my review"
+We have sent the details through the Kaggle contact form instead of posting them here. Could you confirm you received them, and let participants know whether the simulator will be patched before the final re-run?",open_question,"pre-labelled by Claude; relabelled from the text alone in a second pass by Claude (same labeller, so NOT a cold label by me)"
 "Hey everyone! 👋
 
 I'm a first-year Computer Science student specializing in AI/ML, currently learning Python, Pandas, NumPy, and Scikit-learn.
@@ -1523,7 +1523,7 @@ I'd love to hear from other beginners and experienced Kagglers:
 - Which concepts were the hardest for you to understand?
 - What advice would you give someone starting their ML journey?
 
-Let's learn and grow together! 🤝",open_question,"pre-labelled by Claude, needs my review"
+Let's learn and grow together! 🤝",open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "In developing local, privacy-preserving clinical documentation pipelines under strict data protection constraints, accurate speech-to-text transcription is foundational. I evaluated OpenAI’s open Whisper models (`tiny`, `base`, `small`) running locally via faster-whisper on CPU using self-recorded Urdu-English code-switched clinical consultations[cite: 15].
 
 Notable findings from the evaluation:
@@ -1538,23 +1538,23 @@ What strategies (such as domain-specific prompt prefixing or vocabulary biasing 
 ---
 * **Full Audio Evaluation:** [Masmatix Innovations Insights](https://masmatixinnovations.co.uk/insights/)
 * **Transcripts & Benchmark Scripts:** [MHKhan50 on GitHub](https://github.com/MHKhan50)
----",open_question,pre-labelled by Claude; relabelled open_question under final rule (post asks something)
+---",open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me) (relabelled open_question under the final rule)"
 "I think a better approach would be to freeze all notebook achievements as of a certain date. All achievements earned before that cutoff would be retained—medals, titles, the fancy GM profile frames—but no new notebook achievements would be added after that date. This change should be implemented in a way that makes players who have genuinely contributed to Kaggle's open-source ecosystem feel respected.
-Five years ago, earning a Notebook GM title carried real weight, but today it's worth re-examining. Kaggle has already removed the discussion achievements and titles, yet nowadays, some widely recognized contributions—insightful comments, healthy commentary that guides the direction of competitions—are actually more valuable than AI-generated code, or code that farms scores and undermines leaderboard fairness.",complaint,"pre-labelled by Claude, needs my review"
+Five years ago, earning a Notebook GM title carried real weight, but today it's worth re-examining. Kaggle has already removed the discussion achievements and titles, yet nowadays, some widely recognized contributions—insightful comments, healthy commentary that guides the direction of competitions—are actually more valuable than AI-generated code, or code that farms scores and undermines leaderboard fairness.",complaint,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "How to get good training labels? One way to look at this Kaggle competition is to create soft/hard study-level labels to train an image MRI model.  
  
 1) we start with Claude Opus 4.5 labels : https://github.com/NTejas-1/RSNA-Knee-Abnormality-Detection  
 2) we use non-gold 4.3k labels to train mri and text models  
-3) we blend them : local cv on gold58 = 0.938",technical_analysis,"pre-labelled by Claude, needs my review"
-"With the advancement of coding agents, the current rules are no longer as appropriate as they used to be.",complaint,"pre-labelled by Claude, needs my review"
-"I don't understand, how suddenly kaggle tpu q have been going this big lately.",complaint,"pre-labelled by Claude, needs my review; hard case: complaint vs open_question (puzzled, no ask)"
-"Hi Danial, thanks for the great write-up! Could you share how you turned MOAKS into labels? Which fields and thresholds did you use for PF OA, Lateral OA and Synovitis? Were the targets hard 0/1 or soft? And was the masked loss averaged over the observed cells of each row, or over all 12 cells? Thanks!",open_question,"pre-labelled by Claude, needs my review"
+3) we blend them : local cv on gold58 = 0.938",technical_analysis,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
+"With the advancement of coding agents, the current rules are no longer as appropriate as they used to be.",complaint,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
+"I don't understand, how suddenly kaggle tpu q have been going this big lately.",complaint,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me); hard case: complaint vs open_question (puzzled, no ask)"
+"Hi Danial, thanks for the great write-up! Could you share how you turned MOAKS into labels? Which fields and thresholds did you use for PF OA, Lateral OA and Synovitis? Were the targets hard 0/1 or soft? And was the masked loss averaged over the observed cells of each row, or over all 12 cells? Thanks!",open_question,"pre-labelled by Claude; relabelled from the text alone in a second pass by Claude (same labeller, so NOT a cold label by me)"
 "Hi, I'm having trouble with the ""Save Task"" button in the Benchmark 
 task notebook. The notebook runs successfully (logs confirm 35.8s 
 successful run, 9/9 assertions pass, output files are generated) but 
 the task never appears in my benchmark under ""Your Tasks"". The UI 
 shows ""Failed"" but the logs show success. Has anyone else experienced 
-this? Is there an alternative way to register a task to a benchmark?",open_question,"pre-labelled by Claude, needs my review"
+this? Is there an alternative way to register a task to a benchmark?",open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "**28th place · Gold · Kaggriculture 2026**<br>
 *A learned policy controls the first ten days; a planner then chooses what to grow, who does the work, and when to sell.*
 
@@ -2100,8 +2100,8 @@ The plot below brings together **fourteen complete, nonduplicate candidate compa
 
 8. Alibaba Cloud. (n.d.). *PPU-SMI device management tool (v1.6)*. ZHENWU PPU Cloud Service documentation. [Official documentation](https://help.aliyun.com/en/document_detail/2971881.html). Accessed October 16, 2026.
 
-9. T-Head. (n.d.). *vLLM SAIL: Supported features*. Revision `cc1b67eaa1bee9a7f375baaef16dff4015650fd1`. [Official documentation](https://github.com/t-head/vllm-sail/blob/cc1b67eaa1bee9a7f375baaef16dff4015650fd1/docs/user_guide/supported_features.md). Accessed October 16, 2026.",technical_analysis,"pre-labelled by Claude, needs my review"
-Could you share the 3.8 flash prompt and settings? I'd like to play around with this myself,open_question,"pre-labelled by Claude, needs my review"
+9. T-Head. (n.d.). *vLLM SAIL: Supported features*. Revision `cc1b67eaa1bee9a7f375baaef16dff4015650fd1`. [Official documentation](https://github.com/t-head/vllm-sail/blob/cc1b67eaa1bee9a7f375baaef16dff4015650fd1/docs/user_guide/supported_features.md). Accessed October 16, 2026.",technical_analysis,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
+Could you share the 3.8 flash prompt and settings? I'd like to play around with this myself,open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "Since the 12B, E4B and E2B models were added, I wanted to know whether a smaller, faster model could do better within the time budget. I ran the same agent files (the public [Budget-Fit configuration](https://www.kaggle.com/code/verracodeguacas/gemma-4-agent-budget-fit-single-agent) by verracodeguacas) on the permitted models and changed only the model and the time limit per task.
 
 **Setup:** 31 tasks from four public repositories I had not used before, the official serving stack, one A100.
@@ -2123,22 +2123,22 @@ Could you share the 3.8 flash prompt and settings? I'd like to play around with 
 
 **Limits:** 31 tasks from four repositories, one or two runs per setting, timing on an A100 rather than the scorer's four L4 GPUs. Differences of one or two tasks would be noise here; the gap between 31B and 12B was the same in both runs.
 
-Per-task results are in [Gemma 4 Task Soundness and Local Results](https://www.kaggle.com/datasets/dmitriigluzdov/gemma-4-task-soundness-and-local-results); speed measurements are in [Gemma 4 Serving and LoRA Verification Kit](https://www.kaggle.com/datasets/dmitriigluzdov/gemma-4-serving-and-lora-verification-kit). Happy to hear if anyone has seen the 12B do better with a different prompt or budget.",technical_analysis,"pre-labelled by Claude, needs my review"
-"Hello there @ashleyoldacre is there a discord channel for this specific competition, I can't seem to find the channel server?",open_question,"pre-labelled by Claude, needs my review"
+Per-task results are in [Gemma 4 Task Soundness and Local Results](https://www.kaggle.com/datasets/dmitriigluzdov/gemma-4-task-soundness-and-local-results); speed measurements are in [Gemma 4 Serving and LoRA Verification Kit](https://www.kaggle.com/datasets/dmitriigluzdov/gemma-4-serving-and-lora-verification-kit). Happy to hear if anyone has seen the 12B do better with a different prompt or budget.",technical_analysis,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
+"Hello there @ashleyoldacre is there a discord channel for this specific competition, I can't seem to find the channel server?",open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "Hi, I ve been on kaggle only for 2 weeks for now, looking forward to build connections and improving together with fellow engineers. 
-My question for today is, how to perfect the titanic competition accuracy score, is it even needed? I ve created 9 notebooks, but my best result is still 0,782.",open_question,"pre-labelled by Claude, needs my review"
+My question for today is, how to perfect the titanic competition accuracy score, is it even needed? I ve created 9 notebooks, but my best result is still 0,782.",open_question,"pre-labelled by Claude; relabelled from the text alone in a second pass by Claude (same labeller, so NOT a cold label by me)"
 "i find that for large train data, train roc cannot reach 100, unless label are correct. validation set cv may not be the only way to estimate public/private LB.   
 
-A LLM labelled GT have 0.89 on golden 58 samples would have 0.95 train auc. 0.92 validation auc (back on gold58), and about 0.930 public LB",technical_analysis,"pre-labelled by Claude, needs my review"
-"I think it's a very good step. To be honest, the problem with those who Kaggle is that they reached high ranks lightning fast with synthetic data and so on, which kills the element of challenge. I am not against this thing, though.",complaint,"pre-labelled by Claude, needs my review"
+A LLM labelled GT have 0.89 on golden 58 samples would have 0.95 train auc. 0.92 validation auc (back on gold58), and about 0.930 public LB",technical_analysis,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
+"I think it's a very good step. To be honest, the problem with those who Kaggle is that they reached high ranks lightning fast with synthetic data and so on, which kills the element of challenge. I am not against this thing, though.",complaint,"pre-labelled by Claude; relabelled from the text alone in a second pass by Claude (same labeller, so NOT a cold label by me)"
 "people posting high public notebook at the final leg of competition is ALWAYS the worst, it kills the soul of the competition :'(
 
-with this speed i think soon we will see .960 notebook :p",complaint,"pre-labelled by Claude, needs my review"
-Almost 29 hrs and still waiting... on my side. It seems like the wait times are growing. Did yours eventually start?,open_question,"pre-labelled by Claude, needs my review"
-It's more disappointing to see thieves copying other people's work and begging for upvotes on notebooks that aren't even theirs. I’ve received many messages like this on LinkedIn. They even make AI-generated posts with exaggerated claims on social media after successfully stealing a notebook GM. Even few of them get a high-paid job by stealing other's work. I wish Kaggle would either shut down the notebook ranking system or spend more time maintaining notebook quality. tbh I think disucssion GM is much more valuable than Notebook GM. I don't know why Kaggle close it.,complaint,"pre-labelled by Claude, needs my review"
-"I used Claude to generate the labels, and a single vision model achieved a maximum score of 0.942 on the leaderboard. Then I tried fine-tuning or probing MedGemma, but that didn’t help much either :') I guess I will stick with the Claude labels.",technical_analysis,"pre-labelled by Claude, needs my review"
+with this speed i think soon we will see .960 notebook :p",complaint,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
+Almost 29 hrs and still waiting... on my side. It seems like the wait times are growing. Did yours eventually start?,open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
+It's more disappointing to see thieves copying other people's work and begging for upvotes on notebooks that aren't even theirs. I’ve received many messages like this on LinkedIn. They even make AI-generated posts with exaggerated claims on social media after successfully stealing a notebook GM. Even few of them get a high-paid job by stealing other's work. I wish Kaggle would either shut down the notebook ranking system or spend more time maintaining notebook quality. tbh I think disucssion GM is much more valuable than Notebook GM. I don't know why Kaggle close it.,complaint,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
+"I used Claude to generate the labels, and a single vision model achieved a maximum score of 0.942 on the leaderboard. Then I tried fine-tuning or probing MedGemma, but that didn’t help much either :') I guess I will stick with the Claude labels.",technical_analysis,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "Yes. It's rare to see so blatant 'pay to win' competition as this one 🤣🤣
-Although even if we got a large dataset participant can still generate more for an advantage...and then if we have huge amount of data the barrier would just move to pay to win for compute, hehe",complaint,"pre-labelled by Claude, needs my review"
+Although even if we got a large dataset participant can still generate more for an advantage...and then if we have huge amount of data the barrier would just move to pay to win for compute, hehe",complaint,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "# Q-FT: a Qwen transformer that reads tabular rows as embeddings
 
 Kaggle Playground S6E10 (airline satisfaction, ROC AUC). How each row of the table is turned into vectors, fed into
@@ -2280,43 +2280,43 @@ Q-FT folds: 0.959602 / 0.959070 / 0.960712 / 0.960388 / 0.959283.
 ## 7. Conclusion
 
 - Our Tabular Transformer works great! On raw features it ties a tuned XGBoost and beats a tuned RealMLP. Wow!
-- Next steps are to add tabular pretraining and in context learning similar to TFMs!",technical_analysis,"pre-labelled by Claude, needs my review"
+- Next steps are to add tabular pretraining and in context learning similar to TFMs!",technical_analysis,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "The 4.5 h isn't tuning time. It's training the final model: 5 folds × 8 seeds = 40 RealMLP fits (pytabkit RealMLP_TD_Classifier), each with n_ens=8, so 320 networks in total, about 7 min per fit on one A100.
 
 Tuning was not a cold-start Optuna search. We started from two known-good parameter sets: our RealMLP params from S6E8 (1st place) and a public RealMLP setup. pytabkit defaults served as a reference. Then we screened a small hand-designed grid of 26 configs. Each config ran on 2 folds × 2 seeds (about 9 GPU-hours in total), with honest training: a 5% inner holdout of outer-train picks the best epoch, and the scored fold is only predicted. We used an AI coding assistant to run and analyse the grid.
 
 Only one knob really mattered: plr_sigma, the scale of RealMLP's periodic numeric embeddings. Raising it from 0.94 (S6E8 set) to 32 gave about +5.5e-4 AUC. Flight Distance has about 3.5k distinct values and behaves like a route ID, so it needs fine resolution. It's the same effect as XGBoost improving with max_bin=4096. Epochs, learning rate, width, dropout, batch size and label smoothing were all within seed noise (±1e-4).
 
-Final config: the S6E8 parameter set with n_epochs=20 and plr_sigma=32; everything else unchanged. In the feature-engineering table we reused these settings as is (no re-tuning on the 30-column view).",technical_analysis,"pre-labelled by Claude, needs my review"
-i train a mri model on Qwen3.5-2b JEV to mimick his behaviour. then submit this with the other mri model. Ensemble at 50/50 LB is 0.926,technical_analysis,"pre-labelled by Claude, needs my review"
-"waht is happening at the public notebook? everyone is using other works as prior. It is like BC and RL in simulator competition. The risk is ""is his prior an overfitting one?""",open_question,pre-labelled by Claude; relabelled open_question under final rule (post asks something)
+Final config: the S6E8 parameter set with n_epochs=20 and plr_sigma=32; everything else unchanged. In the feature-engineering table we reused these settings as is (no re-tuning on the 30-column view).",technical_analysis,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
+i train a mri model on Qwen3.5-2b JEV to mimick his behaviour. then submit this with the other mri model. Ensemble at 50/50 LB is 0.926,technical_analysis,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
+"waht is happening at the public notebook? everyone is using other works as prior. It is like BC and RL in simulator competition. The risk is ""is his prior an overfitting one?""",open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me) (relabelled open_question under the final rule)"
 "I opened a notebook and this happened, I don’t know how to solve it
 
-Firebase: No Firebase App '[DEFAULT]' has been created - call Firebase App.initializeApp() (app/no-app).",open_question,"pre-labelled by Claude, needs my review"
-The Biggest Bug is the limited RAM available and the excess data storage capacity required to participate in most competitions,complaint,"pre-labelled by Claude, needs my review"
-"what is your approaches throughput ? at around 300-500 tps i had ~19-20 % score. only attempted half the dataset. so practically 40 % is possible with 600-800 tps, 1 attempt per task. paired with a helpful harness, i think more is possible. more attempts certainly helps, as manier times attempts dont end up with a answer. but when done, theyre mostly right. it just takes 128k - 256k context window and lot of stuff to optimally perform at the fullest level. contestnats must be juicing every ounce at this point.",open_question,pre-labelled by Claude; relabelled open_question under final rule (post asks something)
-"Are there any upcoming meetups in the Middle East, or any activists in Jordan who might be interested in this kind of gathering?",open_question,"pre-labelled by Claude, needs my review"
+Firebase: No Firebase App '[DEFAULT]' has been created - call Firebase App.initializeApp() (app/no-app).",open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
+The Biggest Bug is the limited RAM available and the excess data storage capacity required to participate in most competitions,complaint,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
+"what is your approaches throughput ? at around 300-500 tps i had ~19-20 % score. only attempted half the dataset. so practically 40 % is possible with 600-800 tps, 1 attempt per task. paired with a helpful harness, i think more is possible. more attempts certainly helps, as manier times attempts dont end up with a answer. but when done, theyre mostly right. it just takes 128k - 256k context window and lot of stuff to optimally perform at the fullest level. contestnats must be juicing every ounce at this point.",open_question,"pre-labelled by Claude; relabelled from the text alone in a second pass by Claude (same labeller, so NOT a cold label by me) (relabelled open_question under the final rule)"
+"Are there any upcoming meetups in the Middle East, or any activists in Jordan who might be interested in this kind of gathering?",open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "Hi @ryanholbrook Thanks! Two quick clarifications that probably matter for everyone:
 
 1. Are submissions with the smaller variants scored under the same conditions as 31B (same 4×L4 hardware, same 12-hour total limit, same per-task budgets from eval_config.yaml)?
 
-2. For LoRA on the smaller variants, which base weights should adapters be trained against, so they match the quantized model used at scoring time?",open_question,"pre-labelled by Claude, needs my review"
+2. For LoRA on the smaller variants, which base weights should adapters be trained against, so they match the quantized model used at scoring time?",open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "Thanks for putting this together, the provenance columns made it easy to keep only licensed rows. One thing others may want to know: in our tests the formatting gap (line breaks, Markdown, length) made the corpus hurt CV when added to training, even after flattening. Per-model numbers are in https://www.kaggle.com/code/mizuno0522/model-fingerprints-punctuation-external-data
 
-Maybe a ""single-paragraph, 40-250 words"" view would help people use it.",technical_analysis,"pre-labelled by Claude, needs my review"
+Maybe a ""single-paragraph, 40-250 words"" view would help people use it.",technical_analysis,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "Thanks for the info. How actively is the Kaggle team monitoring the forums for bug reports?
 
 I would also recommend that once the bug has been reported and the Kaggle team starts working on it, we are given feedback on the severity of the bug and the ETA for the fix , if possible.
 
-Thanks.",open_question,"pre-labelled by Claude, needs my review"
-I tried to submit my solution the logs show it is completed and in my original run it took less than 9 hours took nearly 2-3 hours but in the submission it still keeps running and exceeds the 9 hour limit. Could anyone explain me is this my notebook issue or there is some issue in the GPU compute itself,open_question,"pre-labelled by Claude, needs my review"
-Hi Kagglers..  Is there any specific guidance to follow when i want to upload new version of an existing dataset ( uploaded by others).. I have downloaded an image data set. But i cannot train my model over it because of some issues. So I downloaded the data set to my local machine and removed unwanted png files and i have moved some images to right folders. Now i want to upload it back in to Kaggle. How to do this? I am new to Kaggle and couldnt find any specific solution or guidance so far..,open_question,"pre-labelled by Claude, needs my review"
-"I'm a beginner exploring Kaggle, and it's more than I thought. I'm super excited to start this journey and learn more, but I'm a little confused about where to start since there are so many things to do. Any suggestions",open_question,"pre-labelled by Claude, needs my review"
+Thanks.",open_question,"pre-labelled by Claude; relabelled from the text alone in a second pass by Claude (same labeller, so NOT a cold label by me)"
+I tried to submit my solution the logs show it is completed and in my original run it took less than 9 hours took nearly 2-3 hours but in the submission it still keeps running and exceeds the 9 hour limit. Could anyone explain me is this my notebook issue or there is some issue in the GPU compute itself,open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
+Hi Kagglers..  Is there any specific guidance to follow when i want to upload new version of an existing dataset ( uploaded by others).. I have downloaded an image data set. But i cannot train my model over it because of some issues. So I downloaded the data set to my local machine and removed unwanted png files and i have moved some images to right folders. Now i want to upload it back in to Kaggle. How to do this? I am new to Kaggle and couldnt find any specific solution or guidance so far..,open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
+"I'm a beginner exploring Kaggle, and it's more than I thought. I'm super excited to start this journey and learn more, but I'm a little confused about where to start since there are so many things to do. Any suggestions",open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "Could you please share if any reports or labelling are available for the OAI data?
 Because there seems to be none in /image03 
 
-Are reports available seprately?",open_question,"pre-labelled by Claude, needs my review"
-Let's use images from now on so you have to put in some actual effort before Claude can write your essays 🤣,complaint,"pre-labelled by Claude, needs my review"
+Are reports available seprately?",open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
+Let's use images from now on so you have to put in some actual effort before Claude can write your essays 🤣,complaint,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "Kaggle Error on submission despite successful notebook execution
 
 My Gemma 4 Developer Agent submission (notebook345c631ad8, Version 5.1) received a ""Kaggle Error.""
@@ -2325,11 +2325,11 @@ The notebook completed successfully in 27.8 seconds. It generated `submission.zi
 
 My earlier submission (Version 3) completed evaluation successfully with a public score of 0.10.
 
-Could you please check whether this latest submission failed due to a scoring infrastructure issue or a specific configuration problem, and advise whether it can be rerun?",open_question,"pre-labelled by Claude, needs my review"
+Could you please check whether this latest submission failed due to a scoring infrastructure issue or a specific configuration problem, and advise whether it can be rerun?",open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "I mean that is kinda my point, we could try to enforce reasonable external resources within competitions, or at the very least avoid creating situations like this where extra data would obviously give an advantage all while being expensive to generate. 
 
-LeBron is an amazing basketball player because of preparation and training, just the same way you are a talented GM due to preparation and training. When we actually get to the game, or competition in this case, everyone should be on equal ground. LeBron is not given any advantage in game like a shorter 3pt line or an extra free throw, just the same way a kaggler shouldn’t get an advantage in game by having excessive GPU or data advantages. Is that really that whiny or unreasonable?",open_question,pre-labelled by Claude; relabelled open_question under final rule (post asks something)
-"In CV my qwen harness at xhigh at full policy median 70k tokens for pass@2 (so 35k per slot) gets %45 solves or about  52~ out of 120 averaged across different runs. The issue is I cant fit it in the box, something I havent tried yet is different reasoning efforts and different ensembles. I really would like to know what the teams in higher spots are doing, especially relevant if anyone would like to answer or support: Do you use one long attempt or multiple attempts? How do you achieve ensemble diversity? Did you finetune the model? Did you have a significant kernel or inference improvement for L4 x 4 setup? Can the qwen harness reach %60 by itself?  Do you use the nvarc solver at all? I managed to get it to run on all 240 tasks in about 4 hours so I think it might help to ensemble with it as it has more solves per minute.",open_question,pre-labelled by Claude; relabelled open_question under final rule (post asks something)
+LeBron is an amazing basketball player because of preparation and training, just the same way you are a talented GM due to preparation and training. When we actually get to the game, or competition in this case, everyone should be on equal ground. LeBron is not given any advantage in game like a shorter 3pt line or an extra free throw, just the same way a kaggler shouldn’t get an advantage in game by having excessive GPU or data advantages. Is that really that whiny or unreasonable?",open_question,"pre-labelled by Claude; relabelled from the text alone in a second pass by Claude (same labeller, so NOT a cold label by me) (relabelled open_question under the final rule)"
+"In CV my qwen harness at xhigh at full policy median 70k tokens for pass@2 (so 35k per slot) gets %45 solves or about  52~ out of 120 averaged across different runs. The issue is I cant fit it in the box, something I havent tried yet is different reasoning efforts and different ensembles. I really would like to know what the teams in higher spots are doing, especially relevant if anyone would like to answer or support: Do you use one long attempt or multiple attempts? How do you achieve ensemble diversity? Did you finetune the model? Did you have a significant kernel or inference improvement for L4 x 4 setup? Can the qwen harness reach %60 by itself?  Do you use the nvarc solver at all? I managed to get it to run on all 240 tasks in about 4 hours so I think it might help to ensemble with it as it has more solves per minute.",open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me) (relabelled open_question under the final rule)"
 "What if we want to report a typo or similar error in the documentation? It's very unclear how to do that. In an open-source project, I would just make a pull request. It's unclear what I should do on Kaggle. 
 
 For example: In Step 3 of the exercise associated with [the third part of the Intro to Machine Learning tutorial](https://www.kaggle.com/dansbecker/your-first-machine-learning-model), there's a typo. It says:
@@ -2340,17 +2340,17 @@ This should be (changes in bold):
 
 > Create a `DecisionTreeRegressor` and save it **as  `iowa_model`**.
 
-Is there an easy way to report something like this? I hate to create a discussion post for it.",open_question,"pre-labelled by Claude, needs my review"
-"I'm new to this and don't know how to use it, or what benchmarks are for. Could someone please explain them to me?🤔",open_question,"pre-labelled by Claude, needs my review"
-"How did you get access to OAI? It seems to be gated on a Login.gov account, for which one needs a US passport and a social security number. I am in the US so I do not know what this looks like for someone in another country, but could be problematic from the [hosts statement about OAI.](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/741819#3526495)",open_question,"pre-labelled by Claude, needs my review"
-the notebook have no problem but Submission with a skill scored 0.00 with no error,open_question,"pre-labelled by Claude, needs my review"
+Is there an easy way to report something like this? I hate to create a discussion post for it.",open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
+"I'm new to this and don't know how to use it, or what benchmarks are for. Could someone please explain them to me?🤔",open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
+"How did you get access to OAI? It seems to be gated on a Login.gov account, for which one needs a US passport and a social security number. I am in the US so I do not know what this looks like for someone in another country, but could be problematic from the [hosts statement about OAI.](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/741819#3526495)",open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
+the notebook have no problem but Submission with a skill scored 0.00 with no error,open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "I think, unless some measures are put into place, this practice will continue, especially nowadays thanks to coding agents and the likes. 
 A more productive usage would be to fork the best public notebook, ask your best LLM to explain what are the significant ideas, try to reproduce locally or with a cloud setup, and then come up with new ideas etc. 
-Low efforts might lead to random medals but won't translate into any gained knowledge.",complaint,"pre-labelled by Claude, needs my review"
+Low efforts might lead to random medals but won't translate into any gained knowledge.",complaint,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "I am observing very slow datasets download in interactive mode from time to time. And I see the GPU quota decrease in the meantime, before the kernel starts.
 
-Is the same true for submissions? I am pretty sure I asked in the past, and was told that dataset downloads were not included in the submission running time. @herbison please let us know whether datasets download it taken from the 12 hours quota..",open_question,"pre-labelled by Claude, needs my review"
-Thanks for the info! I just started with Kaggle Learn and was wondering if these certificates can be added to my LinkedIn or resume. Any advice from experienced users?,open_question,"pre-labelled by Claude, needs my review"
+Is the same true for submissions? I am pretty sure I asked in the past, and was told that dataset downloads were not included in the submission running time. @herbison please let us know whether datasets download it taken from the 12 hours quota..",open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
+Thanks for the info! I just started with Kaggle Learn and was wondering if these certificates can be added to my LinkedIn or resume. Any advice from experienced users?,open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "Hi everyone,
 
 We resubmitted a byte-for-byte identical agent ZIP and obtained different public scores, despite making no changes to the prompts, model settings, tools, or budgets.
@@ -2375,17 +2375,17 @@ Have other participants observed different scores when resubmitting exactly the 
 
 We are not assuming a specific cause; we would appreciate guidance on reliably distinguishing agent improvements from execution variability.
 
-Thanks!",open_question,"pre-labelled by Claude, needs my review"
+Thanks!",open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "Previous NeurIPS seasons had at least one competition with points and medals. Why isn't that the case this season? I thought Kaggle had sponsorship for this kind of scientific competition.
 
-Another question: should it have NeurIPS as part of name? Usually it was",open_question,"pre-labelled by Claude, needs my review"
-"Great work! Would you mind sharing a bit more about how you generated the labels with Claude? I’m curious about what you provided as input (e.g. individual slices, selected slices, or the whole MRI series), how you prompted Claude to assign the labels, and whether you did any manual filtering/correction afterward.",open_question,"pre-labelled by Claude, needs my review"
+Another question: should it have NeurIPS as part of name? Usually it was",open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
+"Great work! Would you mind sharing a bit more about how you generated the labels with Claude? I’m curious about what you provided as input (e.g. individual slices, selected slices, or the whole MRI series), how you prompted Claude to assign the labels, and whether you did any manual filtering/correction afterward.",open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "Honestly just waiting to see the private board at this point.
 The teams that didn't put effort into & don't understand will do far worse than those of us that have spent months working away.
-A large portion of the board is just forked versions of my 0.924 weights as well as other solid datasets & unfortunately as much as I wanted to release my 0.945 weights I haven't because of this.",complaint,"pre-labelled by Claude, needs my review"
+A large portion of the board is just forked versions of my 0.924 weights as well as other solid datasets & unfortunately as much as I wanted to release my 0.945 weights I haven't because of this.",complaint,"pre-labelled by Claude; relabelled from the text alone in a second pass by Claude (same labeller, so NOT a cold label by me)"
 "Really feel like kaggle has fell off the last few years, this competition just seems like an obvious oversight that’s going to continue to make the unfairness of winning gold medals even more dramatic. If this competition was simply competition data only it would be fine, at least at the top ranks. 
 
-Every competition is who has the most gpu, who has the most token usage, etc. I love this platform and I am really hoping we can bring things back to a sensible middle ground for the LLM and CNN comps. Kaggle should be a place where anyone can compete and grow",complaint,"pre-labelled by Claude, needs my review"
+Every competition is who has the most gpu, who has the most token usage, etc. I love this platform and I am really hoping we can bring things back to a sensible middle ground for the LLM and CNN comps. Kaggle should be a place where anyone can compete and grow",complaint,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "Unuseable
 
 disallow certain sha256 datasets if more than 2 clusters using infrence
@@ -2395,10 +2395,10 @@ this is not an infrence site
 this is a research and learning site
 https://www.kaggle.com/code/muhmadkwazulugorilla/glm-5-3-flash-on-a-free-kaggle-tpu-64-tok-s-api/edit
 
-BLACKLIST TPU FROM RUNNING LLM MODELS",complaint,"pre-labelled by Claude, needs my review"
-"@yekenot I wanted to tell you that however you are tuning your RealMLP scripts, you are doing it right. I am guessing it is still manual. I took your features from this competition and did an Optuna run with 100 trials, which took ~8 hours. I seeded my run with 10 parameter combinations that worked in previous competitions, but did not include your parameters. Even though I got completely different parameters than yours, the end result was essentially the same.",technical_analysis,"pre-labelled by Claude, needs my review"
-"and the did you download data successfully? I met ""Not Authorized You are not authorized to view this content"" after click the download button.",open_question,"pre-labelled by Claude, needs my review"
-"full download fails with ""Data not available. This dataset may need its archive recreated."" (API: 404 ""No gcs url found"") for versions 7, 8 and 9. Versions 1–6 download fine. Individual files and notebook access work. Please recreate the archive.",open_question,"pre-labelled by Claude, needs my review"
+BLACKLIST TPU FROM RUNNING LLM MODELS",complaint,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
+"@yekenot I wanted to tell you that however you are tuning your RealMLP scripts, you are doing it right. I am guessing it is still manual. I took your features from this competition and did an Optuna run with 100 trials, which took ~8 hours. I seeded my run with 10 parameter combinations that worked in previous competitions, but did not include your parameters. Even though I got completely different parameters than yours, the end result was essentially the same.",technical_analysis,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
+"and the did you download data successfully? I met ""Not Authorized You are not authorized to view this content"" after click the download button.",open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
+"full download fails with ""Data not available. This dataset may need its archive recreated."" (API: 404 ""No gcs url found"") for versions 7, 8 and 9. Versions 1–6 download fine. Individual files and notebook access work. Please recreate the archive.",open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "Hi everyone!
 
 I am a third-year Computer Science student working on a machine learning project to predict book genres from book summaries using the CMU Book Summary Dataset.
@@ -2517,7 +2517,7 @@ I do not want to increase the reported score artificially. My goal is to underst
 
 I would appreciate suggestions, references, or examples of similar projects.
 
-Thank you!",open_question,"pre-labelled by Claude, needs my review"
+Thank you!",open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "Much of the recent LB movement here comes in steps of 0.00001, so I measured how much of that is noise.
 
 Method: I took the 124 public OOF pairs ([Chris Deotte's dataset](https://www.kaggle.com/datasets/cdeotte/s6e10-124-public-oof-and-test-predictions)), drew 200 random 60k-row slices of the labelled OOF (the public LB is 20% of test, about 60k rows), and recorded how much the AUC gap between two submissions moves from slice to slice. I did this for 136 pairs of single models and stacks.
@@ -2538,7 +2538,7 @@ Example: the same 124-member stack at C=0.003 vs C=0.03 has a true OOF gap under
 You can compute ρ from two submission files without any labels, so the notebook has a `lb_noise(sub_a, sub_b, lb_gap)` helper that tells you whether a gap you saw is signal or noise:
 https://www.kaggle.com/code/korokke3/s6e10-is-your-0-00001-real-lb-noise-calculator
 
-The private slice is 4× larger, so its noise is about half of the public noise. Picking finals by OOF CV (700k rows) is a much stronger test than the public LB.",technical_analysis,"pre-labelled by Claude, needs my review"
+The private slice is 4× larger, so its noise is about half of the public noise. Picking finals by OOF CV (700k rows) is a much stronger test than the public LB.",technical_analysis,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "Team Farmcore, 4th place of ~10 200 teams. Corresponding author: [Iaroslav Pudovkin](https://www.kaggle.com/betmyex). Code: [github.com/B3tMy3x/farmcore-kaggriculture](https://github.com/B3tMy3x/farmcore-kaggriculture). Trained agent: [Kaggle Models](https://www.kaggle.com/models/betmyex/farmcore-kaggriculture-agent).
 
 Our final agent is pure behavioral cloning: no search at play time, no self-play data. The biggest gain came from fixing the labels, not the model: retrained on what the engine executed instead of what players ordered, plus one feeding rule, the same network went from 3 to 23 wins of 24 against our previous best. The three main choices:
@@ -2694,7 +2694,7 @@ Every pure-imitation team in the top 10 trained its final model on one to three 
 * Sampling actions instead of argmax: money within noise, fewer wins.
 * Iterative multi-pass draft refinement: no gain over a single corrector step.
 
-Thanks to the organizers for a genuinely interesting game, and to the teams at the top of the ladder: every one of our models learned by watching your games. This gold also made all of us Kaggle Competitions Masters. Thank you!",technical_analysis,"pre-labelled by Claude, needs my review"
+Thanks to the organizers for a genuinely interesting game, and to the teams at the top of the ladder: every one of our models learned by watching your games. This gold also made all of us Kaggle Competitions Masters. Thank you!",technical_analysis,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "Hi hosts,
 
 Several threads ask about training passages generated by prompting the candidate models ([749613](https://www.kaggle.com/competitions/name-that-llm/discussion/749613), [749664](https://www.kaggle.com/competitions/name-that-llm/discussion/749664), [750038](https://www.kaggle.com/competitions/name-that-llm/discussion/750038)). Section 2.6.a allows External Data that is either publicly available or ""satisfies the Reasonableness criteria"" of 2.6.b, and I'd find a few concrete follow-ups helpful. A one-line answer per item would be plenty.
@@ -2711,7 +2711,7 @@ Several threads ask about training passages generated by prompting the candidate
 
 6. **Reproducibility:** API outputs are not deterministic, and hosted models get updated or retired, so identical data cannot be regenerated later. Is it enough under 2.5.b and 2.8.a.1 that the Sponsor can retrain from the delivered data, with the full generation code showing how it was made?
 
-Thank you, this would help everyone plan on equal terms.",open_question,"pre-labelled by Claude, needs my review"
+Thank you, this would help everyone plan on equal terms.",open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "I spent my first day on a data audit instead of training anything, and honestly the punctuation table explains most of what makes this competition hard. Posting the numbers in case they save someone a day.
 
 A few things I noticed:
@@ -2730,7 +2730,7 @@ Two things that did not work, since those are useful too. First-word habits aren
 
 For what it's worth, the top LightGBM features were comma rate, type-token ratio, word-length std, sentence-length std, capitalised-word rate and long-word rate. Vocabulary richness and rhythm, not any one mark.
 
-All of this is grouped CV on the public train set only, 5 folds x 3 seeds, no external data. Happy to be corrected on any of it.",technical_analysis,"pre-labelled by Claude, needs my review"
+All of this is grouped CV on the public train set only, 5 folds x 3 seeds, no external data. Happy to be corrected on any of it.",technical_analysis,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "My RSNA Knee code competition submission has remained in `Running` status for over two hours.
 
 - Notebook: `02-data-exploration`
@@ -2741,9 +2741,9 @@ The notebook logs show successful inference and `FINAL AUDIT: PASS`. The logs en
 
 Could the Kaggle team check whether this submission is still being evaluated or is stuck in the submission/scoring pipeline?
 
-Notebook: https://www.kaggle.com/code/medicaladvisor/02-data-exploration?scriptVersionId=360531873",open_question,"pre-labelled by Claude, needs my review"
+Notebook: https://www.kaggle.com/code/medicaladvisor/02-data-exploration?scriptVersionId=360531873",open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "Have you checked the traces, are they clean and simple to reason? What were the hyperparameters? if you have bigger dataset then you need to increase the trainable parameter count with bigger Rank. There was a paper about how many parameters required for given datasets token count.
-So if you train on big data with low parameters it won't be able to hold that information, you are trying to compress too much information in too little space.",open_question,"pre-labelled by Claude, needs my review"
+So if you train on big data with low parameters it won't be able to hold that information, you are trying to compress too much information in too little space.",open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "Hello Kaggle team,
 
 1. Summary: Since about 21:45 KST (12:45 UTC) on 2026-10-19, my ""Save & Run All"" commits with GPU T4 x2 never leave the ""Queued"" state. Commits without an accelerator run fine.
@@ -2759,7 +2759,7 @@ So if you train on big data with low parameters it won't be able to hold that in
 
 Is there a T4 capacity issue right now, or is something stuck on my account?
 
-Thank you.",open_question,"pre-labelled by Claude, needs my review"
+Thank you.",open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "I’ve been experimenting with trajectory-based LoRA SFT for Gemma 4, but haven’t seen improved autonomous issue resolution so far. Looking through related work, I noticed that several prominent success stories use full-parameter fine-tuning for their main agent policies:
 - SWE-Gym: the OpenHands policy experiments use full fine-tuning for the 7B, 14B and 32B models.
 - SWE-smith: its main trajectory-training recipe uses full fine-tuning.
@@ -2777,7 +2777,7 @@ These are preliminary, small-sample results—not proof that LoRA is the cause. 
 Has anyone obtained consistent end-to-end gains over the unchanged Base model using LoRA SFT in this competition? Comparisons across ranks—or matched LoRA versus full fine-tuning—would be particularly useful. Please share training configurations and actual autonomous repair results if available.
 I’m also exploring LoRA-based RL separately; the observations above concern SFT.
 
-btw, i'm only interested in training part for this competition",open_question,"pre-labelled by Claude, needs my review"
+btw, i'm only interested in training part for this competition",open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "## Summary
 
 My final agent (MXFMHF12D) finished 19th of 10,148 teams with a final score of 5,210.3. It is a behaviour clone of the teams that finished 1st, 3rd and 7th: M & M & P & Q, DSM and DECEM. Twelve small networks trained on their replays (and on older games in slots the agent does not play from) each score every move, the agent averages their probabilities, and three rules sell goods the engine would otherwise destroy. No RL went into it, and it does no search at play time.
@@ -2843,14 +2843,14 @@ Thanks to Kaggle for the game, and to M & M & P & Q, DSM and DECEM, whose games 
 - Thomas Tschinkel's [Public State Router](https://www.kaggle.com/code/thomastschinkel/kaggriculture-93-8-win-rate-public-state-router)
 - WUZB's [v15stack](https://www.kaggle.com/code/wzhengbiao/kaggriculture-v15stack-submit)
 - Ahmed Berat Özer's [V57](https://www.kaggle.com/code/ahmedberatozer/kaggriculture-v57-funding-order-invariant)
-- prvsiyan's [The Moon Counts Melons](https://www.kaggle.com/code/prvsiyan/kaggriculture-frontier-the-moon-counts-melons) and [The Soil Remembers Rain](https://www.kaggle.com/code/prvsiyan/kaggriculture-frontier-the-soil-remembers-rain), whose controller builds on haideptry's [The 2965 Master Hybrid Engine](https://www.kaggle.com/code/haideptry/the-2965-master-hybrid-engine)",technical_analysis,"pre-labelled by Claude, needs my review"
+- prvsiyan's [The Moon Counts Melons](https://www.kaggle.com/code/prvsiyan/kaggriculture-frontier-the-moon-counts-melons) and [The Soil Remembers Rain](https://www.kaggle.com/code/prvsiyan/kaggriculture-frontier-the-soil-remembers-rain), whose controller builds on haideptry's [The 2965 Master Hybrid Engine](https://www.kaggle.com/code/haideptry/the-2965-master-hybrid-engine)",technical_analysis,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "Startup pitch: 
 Introducing Vibgle. Kaggle for vibe coders.
 
 Where Claude writes the code, GPT writes the explanations and the only thing you do is prompt repeatedly to produce slops.
 
-Testimony 👇",complaint,"pre-labelled by Claude, needs my review"
-"i have  a huge file with 250+  pdfs , i just want an guidance to create queryable curriculum and textbook corpus",open_question,"pre-labelled by Claude, needs my review"
+Testimony 👇",complaint,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
+"i have  a huge file with 250+  pdfs , i just want an guidance to create queryable curriculum and textbook corpus",open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "Using daily PM2.5 aggregate data sourced from OpenAQ across six major urban centers in Pakistan over a 12-month window, I evaluated ambient air quality against the 2021 WHO Global Air Quality Guidelines. 
 
 The findings present a critical look at regional baseline pollution:
@@ -2866,7 +2866,7 @@ Since these metrics rely on low-cost sensor networks rather than reference-grade
 ---
 * **Full Data Analysis:** [Masmatix Innovations Insights](https://masmatixinnovations.co.uk/insights/)
 * **Aggregation Code & Open Datasets:** [MHKhan50 on GitHub](https://github.com/MHKhan50)
----",open_question,pre-labelled by Claude; relabelled open_question under final rule (post asks something)
+---",open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me) (relabelled open_question under the final rule)"
 "Error loading directory content.
 - Create a directory within a directory,
 - Add files(programmatically)
@@ -2884,8 +2884,8 @@ OutputFileTreeManager.tsxx:60 Uncaught (in promise) TypeError: Cannot read prope
     at Generator._invoke (runtime.jss:294:22)
     at Generator.next (runtime.jss:119:21)
     at wge (databundleV3Converters.tss:210:18)
-    at a (databundleV3Converters.tss:210:18)",open_question,"pre-labelled by Claude, needs my review"
-Wondering if anyone is actually reading through the LLM generated wall of text or summarizing in <30 words?,open_question,pre-labelled by Claude; relabelled open_question under final rule (post asks something)
+    at a (databundleV3Converters.tss:210:18)",open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
+Wondering if anyone is actually reading through the LLM generated wall of text or summarizing in <30 words?,open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me) (relabelled open_question under the final rule)"
 "I'm Yuan800, a high school junior, and this was my first time leading a team in a Kaggle competition. All the rented compute for our whole competition, GPU and CPU, came to **$59.78**. Each of our final models was trained from scratch on one rented RTX 5090, and the larger one took about 4.5 hours. Our final agents use no self-play and no RL, and every evaluation ran on CPU. This post explains how our plain behaviour-cloning (BC) agent got into the gold range, and what we learned on the way.
 
 ## 1. What we did
@@ -2958,16 +2958,16 @@ We used Claude Code as an assistant for replay analysis, debugging and running e
 
 Thanks to the hosts for the [daily top-episodes datasets](https://www.kaggle.com/datasets/kaggle/kaggriculture-episodes-index), which were the main source of our training data, and to every team whose replays we learned from (especially M & M & P & Q, whose games we weighted most). Thanks also to [nikital7](https://www.kaggle.com/code/nikital7/4000x-environment-speedup-kaggriculture) for the public notebook ""4000x environment speedup"", and to [destbreso](https://www.kaggle.com/code/destbreso/kagsim-the-engine-at-2000-episodes-per-second) for packaging it as `kagsim`. A fast engine that matches the official one on well-formed actions let us screen our earlier rule-based agents on a small CPU budget. All model-selection games in this post ran on the official engine.
 
-We're busy with Q1 benchmark exams right now, so our code will be cleaned up and released later. Sorry for the wait!",technical_analysis,"pre-labelled by Claude, needs my review"
-Hi everyone! I'm diving into data analytics and looking for beginner-friendly project ideas or study tips. What was your favorite project when you first started?,open_question,"pre-labelled by Claude, needs my review"
-"Thanks, Chris. That fits the numbers: CV noise scales with 1/sqrt(rows), so on 700k OOF rows the sd of a gap is about sqrt(60k/700k) = 0.29 of the public-LB sd for the same pair. A +1e-5 CV gain between two very similar submissions is much easier to trust than the same move on the public board.",technical_analysis,"pre-labelled by Claude, needs my review"
+We're busy with Q1 benchmark exams right now, so our code will be cleaned up and released later. Sorry for the wait!",technical_analysis,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
+Hi everyone! I'm diving into data analytics and looking for beginner-friendly project ideas or study tips. What was your favorite project when you first started?,open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
+"Thanks, Chris. That fits the numbers: CV noise scales with 1/sqrt(rows), so on 700k OOF rows the sd of a gap is about sqrt(60k/700k) = 0.29 of the public-LB sd for the same pair. A +1e-5 CV gain between two very similar submissions is much easier to trust than the same move on the public board.",technical_analysis,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "Kaggle is becoming something like Formula 1. You need skills and talent, but financial resources are also playing an increasingly large role. It's neither good nor bad, it's reality.
 
-It's a bit disappointing that the vast majority of competitions with an accessible amount of data are trading competitions (with poorly formulated problem statements, for example, predicting some index a year ahead), many of which end completely randomly (and most of the winners don't even publish their solutions).",complaint,"pre-labelled by Claude, needs my review"
-"Exactly, like RSNA... and that earlier petfinder competition (then people realized even winning solutions could use external data without anyone noticing).",complaint,"pre-labelled by Claude, needs my review"
-"Great benchmark. Given your note that fine-tuned TFMs didn't improve a stack that already had the zero-shot versions, would you say the 10–37 GPU-hours are better spent adding more diverse zero-shot TFMs to the stack? Also, was the 80/20 context/query split tuned, or did it stay fixed?",open_question,"pre-labelled by Claude, needs my review"
-"Hi , everyone I am new to kaggle competition. Competing in ""jigsaw toxic comment prediction"". My present score is .664/ I am facing overfitting issues using large module . Can anyone guide me to resolve it.Thankyou.",open_question,"pre-labelled by Claude, needs my review"
-"Interesting table. Have you checked whether the fine-tuned models still add to a stack that already has TFM members? In my runs a single-model gain of about +0.00038 disappeared when I stacked it with 135 public members, so I'd be curious whether the per-model gains in the table survive in a stack too.",open_question,"pre-labelled by Claude, needs my review"
+It's a bit disappointing that the vast majority of competitions with an accessible amount of data are trading competitions (with poorly formulated problem statements, for example, predicting some index a year ahead), many of which end completely randomly (and most of the winners don't even publish their solutions).",complaint,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
+"Exactly, like RSNA... and that earlier petfinder competition (then people realized even winning solutions could use external data without anyone noticing).",complaint,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
+"Great benchmark. Given your note that fine-tuned TFMs didn't improve a stack that already had the zero-shot versions, would you say the 10–37 GPU-hours are better spent adding more diverse zero-shot TFMs to the stack? Also, was the 80/20 context/query split tuned, or did it stay fixed?",open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
+"Hi , everyone I am new to kaggle competition. Competing in ""jigsaw toxic comment prediction"". My present score is .664/ I am facing overfitting issues using large module . Can anyone guide me to resolve it.Thankyou.",open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
+"Interesting table. Have you checked whether the fine-tuned models still add to a stack that already has TFM members? In my runs a single-model gain of about +0.00038 disappeared when I stacked it with 135 public members, so I'd be curious whether the per-model gains in the table survive in a stack too.",open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "Hi all! I'm currently at the top of the public LB (early days, it will move), and these are my notes from the **first two days**, for newcomers. Sections 1-4 need no extra data or GPU. Metric: balanced accuracy over 18 classes (chance about 0.056). Start with the [official getting-started thread + Discord (749382)](https://www.kaggle.com/competitions/name-that-llm/discussion/749382).
 
 **Pitfalls:** random K-fold, ""cleaned"" text, test-layout tricks that only work in CV, ignoring short passages, bf16 on T4, no internet at submission.
@@ -3037,10 +3037,10 @@ With no extra data, Qwen3-14B-Base + LoRA r16 (all linear layers), a classificat
 
 More passages from the 18 models help ([the generated-data debate (749447)](https://www.kaggle.com/competitions/name-that-llm/discussion/749447)). Free, public sets: [18-model wide response corpus (749629)](https://www.kaggle.com/competitions/name-that-llm/discussion/749629), [extra Claude passages (750224)](https://www.kaggle.com/competitions/name-that-llm/discussion/750224), [helper dataset (750267)](https://www.kaggle.com/competitions/name-that-llm/discussion/750267). Still open: rules on self-generated API data ([749613](https://www.kaggle.com/competitions/name-that-llm/discussion/749613)) and the Kaggle Benchmarks free quota ([750038](https://www.kaggle.com/competitions/name-that-llm/discussion/750038)).
 
-Next read: [a beginner's journey from TF-IDF to LoRA notebooks (750230)](https://www.kaggle.com/competitions/name-that-llm/discussion/750230). Thanks to all linked authors; questions and corrections welcome!",technical_analysis,"pre-labelled by Claude, needs my review"
+Next read: [a beginner's journey from TF-IDF to LoRA notebooks (750230)](https://www.kaggle.com/competitions/name-that-llm/discussion/750230). Thanks to all linked authors; questions and corrections welcome!",technical_analysis,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "Written with OpenAI Codex.
 
-Could you clarify which licence covers the new split in V4? The README and data-card text say CC BY-SA 4.0, but the dataset's License field says CC BY 4.0. I want to cite it correctly.",open_question,"pre-labelled by Claude, needs my review"
+Could you clarify which licence covers the new split in V4? The README and data-card text say CC BY-SA 4.0, but the dataset's License field says CC BY 4.0. I want to cite it correctly.",open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "Bookmarks  in competitions/discussion doesn't work. 
 
 Reproduction steps
@@ -3062,15 +3062,15 @@ Note the missing ""competitions"" path and the incorrect ""discussion path"".
 
 Browser: Chrome, last version. 
 
-I don't now if this is the right place to report the issues.",open_question,"pre-labelled by Claude, needs my review"
-"Is it fair to compete solo vs 5-man teams? Or vs 8-man teams like in ARC? Having 5x more people working on a problem must give some substantial advantage on average, right?",open_question,"pre-labelled by Claude, needs my review"
+I don't now if this is the right place to report the issues.",open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
+"Is it fair to compete solo vs 5-man teams? Or vs 8-man teams like in ARC? Having 5x more people working on a problem must give some substantial advantage on average, right?",open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "Slight extension of this - I only trained on a particular sample if the agreement between different LLM labellers is high, and it's a strong signal >0.9 or <0.1 for presence or absence of an abnormality otherwise I ignore it. 
 
-This removed about 25% of training samples but improved my results on CV and public LB.",technical_analysis,"pre-labelled by Claude, needs my review"
-"The image you shared above, with >90% AUC VLM performance - is that on all labels of 58 gold knees using the 'mosaic' image you posted? if so, I'm doing something very wrong, cause I am not even close to that level of performance :P",open_question,"pre-labelled by Claude, needs my review"
-With time constraints at around 4xL4 speed I got Qwen to 87% (and from reasoning traces it got the rule to almost every problem) so Qwen certainly has the intelligence to do so.,technical_analysis,"pre-labelled by Claude, needs my review"
-Totally agree. The fact that in 12 hours we can collect 50 upvotes on a post like this you would think would get us a response from Kaggle.,complaint,"pre-labelled by Claude, needs my review"
-"the AUCs report in this screenshot, do thet correspond to VLM-extracted AUCs on ALL conditions? I cannot even get close to > 0.9 AUC from the images using google flash :P",open_question,"pre-labelled by Claude, needs my review"
+This removed about 25% of training samples but improved my results on CV and public LB.",technical_analysis,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
+"The image you shared above, with >90% AUC VLM performance - is that on all labels of 58 gold knees using the 'mosaic' image you posted? if so, I'm doing something very wrong, cause I am not even close to that level of performance :P",open_question,"pre-labelled by Claude; relabelled from the text alone in a second pass by Claude (same labeller, so NOT a cold label by me)"
+With time constraints at around 4xL4 speed I got Qwen to 87% (and from reasoning traces it got the rule to almost every problem) so Qwen certainly has the intelligence to do so.,technical_analysis,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
+Totally agree. The fact that in 12 hours we can collect 50 upvotes on a post like this you would think would get us a response from Kaggle.,complaint,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
+"the AUCs report in this screenshot, do thet correspond to VLM-extracted AUCs on ALL conditions? I cannot even get close to > 0.9 AUC from the images using google flash :P",open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "Thanks to Kaggle and the hosts for Kaggriculture. The game looks simple, but the shared market makes it hard. And thanks to the top teams, especially **DSM**, **M & M & P & Q** and **Victor @ Tufa Labs**. Their ladder games were our training data, so this solution is partly theirs.
 
 **TL;DR.** For three weeks we built rule-based agents, planners and RL sale-timing policies, and they plateaued around 2,550-2,800. In the last four days we switched to **closed-loop behavioural cloning (BC)**: per-unit imitation of the top teams' ladder games, iterated on a single **RTX 5070 (12 GB)**. The CNN generations and the final fine-tunes ran on the 5070; the final ViT-style trunk was pre-trained on a Colab A100. The final agent is a hybrid ViT clone fine-tuned on DSM's tomato-always versions, with a small tomato top-up wrapper. Its final ladder score was **2807.4**.
@@ -3201,16 +3201,16 @@ The lesson is that **a crop strategy has to come from the plan (the teacher), no
 5. **Look at the losses one product at a time.** One crop explained most of the gap to the 2800 tier.
 6. **Don't ""fix"" the teacher's mistakes at play time.** Units in our clone sometimes collide on the same task, as DSM's do. Masking those collisions cost $42k-$89k per game, because the clone was pushed into states it had never seen. If a behaviour has to change, change it in training.
 
-Thanks for reading. Happy to answer questions in the comments.",technical_analysis,"pre-labelled by Claude, needs my review"
-"@ayushrai1114  Could you give an official ruling here: will the boiler accounting be patched before the private re-run, and if not, are submissions relying on unbilled heating valid? Thanks!",open_question,"pre-labelled by Claude, needs my review"
-"Interesting - how did you fit the fine-tuning into memory on this large dataset (after all, you need to keep a lot more tensors in memory for computing gradients)? And why AdamW and not Muon (as I assume most TFMs now use Muon for pre-training, and I've seen some papers saying that it's better to use the same optimizer for pre-training and fine-tuning)?",open_question,"pre-labelled by Claude, needs my review"
-"I think I’m doing it right, trying to download the same data used here and my download manager says it’s still waiting on tables to process before I can download but it’s like 450gb would be curious if that sounds about right @nartaa idk why the webpage wouldn’t just allow people to download others public packages rather than build their own that would obviously be a duplicate just for download.",open_question,"pre-labelled by Claude, needs my review"
-"I really wouldnt mind kaggle getting more streamlined and clear with the rulings though. ie, comp data only or hosts can pin extra data upon suggestions if they deem it ok. Without a pin we call it banned. Having GPU in kaggle only would be super nice from a user perspective and my wallets perspective but its also pretty limiting on the projects we could work on. A massive portion of image and language models would be unable to hold a training pipeline on the older gpus kaggle instances use. Unless nearly every comp was suddenly on the 4xL4s (would still suck to train) or the H100 / RTX 6000s I think I might have seen at some point. Generally I think Kaggle is ok with this grey area because they get better models for clients all while not having the clients have to pay for it. If you look at it like education investment then its still a heck of a lot cheaper than other platforms I guess",complaint,"pre-labelled by Claude, needs my review"
+Thanks for reading. Happy to answer questions in the comments.",technical_analysis,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
+"@ayushrai1114  Could you give an official ruling here: will the boiler accounting be patched before the private re-run, and if not, are submissions relying on unbilled heating valid? Thanks!",open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
+"Interesting - how did you fit the fine-tuning into memory on this large dataset (after all, you need to keep a lot more tensors in memory for computing gradients)? And why AdamW and not Muon (as I assume most TFMs now use Muon for pre-training, and I've seen some papers saying that it's better to use the same optimizer for pre-training and fine-tuning)?",open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
+"I think I’m doing it right, trying to download the same data used here and my download manager says it’s still waiting on tables to process before I can download but it’s like 450gb would be curious if that sounds about right @nartaa idk why the webpage wouldn’t just allow people to download others public packages rather than build their own that would obviously be a duplicate just for download.",open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
+"I really wouldnt mind kaggle getting more streamlined and clear with the rulings though. ie, comp data only or hosts can pin extra data upon suggestions if they deem it ok. Without a pin we call it banned. Having GPU in kaggle only would be super nice from a user perspective and my wallets perspective but its also pretty limiting on the projects we could work on. A massive portion of image and language models would be unable to hold a training pipeline on the older gpus kaggle instances use. Unless nearly every comp was suddenly on the 4xL4s (would still suck to train) or the H100 / RTX 6000s I think I might have seen at some point. Generally I think Kaggle is ok with this grey area because they get better models for clients all while not having the clients have to pay for it. If you look at it like education investment then its still a heck of a lot cheaper than other platforms I guess",complaint,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "Bug report
 1. [Summary of problem] Question 2 is missing and is necessary for the exercise to be marked completed
 2. [Steps to reproduce] Just open the exercise. The questions range from q0 (a, b, c, d, e), q1, 13.
 3. [Expected behavior] Because question 2 is missing, the subsequent question proved problematic to finish. The entire course now reads 99% completed and that exercise is the only one marked uncompleted. 
-4. [Screenshots] Screenshots or videos if applicable",open_question,"pre-labelled by Claude, needs my review"
+4. [Screenshots] Screenshots or videos if applicable",open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me)"
 "Our best single-model submission scores **0.949 public AUC**. We are sharing the accuracy recipe, our smaller 0.945 model for the efficiency track, and several changes that did not help.
 
 The accuracy result uses one CoAtNet checkpoint trained at 384 pixels. At inference we take a native 320-pixel center crop and average probabilities from the original view and an anatomical left/right mirror. It is one learned model evaluated twice. The checkpoint itself averages three selected epochs from one training run, called SWA in our code.
@@ -3274,4 +3274,4 @@ Data and/or research tools used in the preparation of this manuscript were obtai
 
 [Shared NDA Study](https://nda.nih.gov/study.html?id=3407) · [DOI: 10.15154/0hcg-f676](https://doi.org/10.15154/0hcg-f676). Official acknowledgement source: [NDA manuscript preparation](https://nda.nih.gov/nda/manuscript-preparation).
 
-What worked for your models, and what looked promising locally but failed on the leaderboard? Please share useful negative results as well as improvements—especially experiences with weak labels, crop geometry, and plane-aware augmentation.",open_question,pre-labelled by Claude; relabelled open_question under final rule (post asks something)
+What worked for your models, and what looked promising locally but failed on the leaderboard? Please share useful negative results as well as improvements—especially experiences with weak labels, crop geometry, and plane-aware augmentation.",open_question,"pre-labelled by Claude, then re-checked by Claude in a second pass (not reviewed by me) (relabelled open_question under the final rule)"
