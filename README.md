@@ -71,7 +71,7 @@ TakeMeter sorts posts from **Kaggle Discussions**, the forum where Kaggle users 
 **Definition:** A question — technical or not — where the outcome is still unresolved. Neutral in tone, no firm verdict yet, just asking or wondering out loud.
 
 **Example 1:**
-> "the sudden flood of 55+ scores makes me think that there is an easy recipe out there. I was able to go from 35 to 45 by ensembling my NVARC-based solution with a Qwen3.8-27B run. doubtful if it can push above 50, though."
+> "I've noticed that the leaderboard medals have disappeared. Is this a bug, or were they intentionally removed? Will they be brought back?"
 
 **Example 2:**
 > "Someone who has 1M training examples per model will find more patterns than someone with 100K training examples per model. Is paying model providers for data generation going to be the key to winning?"
@@ -103,88 +103,89 @@ The case that forced this rule: a bug report — *"My RSNA Knee code competition
 <!-- Where you collected from, how you labelled, your counts, and three hard
      cases. -->
 
-**Where the posts came from:**
+**Where the posts came from:** Public Kaggle Discussions (kaggle.com/discussions), read in October 2026. I used first posts and comments from busy competition threads (RSNA Knee Abnormality Detection, Name That LLM, Kaggriculture, ARC Prize, Gemma 4 Developer Agent, a Playground series), plus the General, Getting Started, Questions & Answers and Product Feedback forums. Competition write-ups supplied most of the `technical_analysis` rows. Nothing was behind a login. Each row's source URL is in `data/kaggle_sources.csv` (the `row` column is the line number in `labels.csv`).
 
-**How I labelled them:** <!-- Cold first? Pre-labelled with AI and corrected?
-Say so plainly — the disclosure is required, not penalised. -->
+I skipped posts that fit none of my three labels (praise like "great write-up!", welcome messages, staff announcements, jokes, arguments between two users), posts in other languages (my model is English-only) and the very long Seaborn tutorials. So the file is not a random sample of Kaggle Discussions. It is a sample of posts that fit my labels, and that is a limit on what the classifier can claim.
+
+**How I labelled them:** Claude collected the posts and pre-labelled all 161 using my label definitions and my complaint-vs-open_question decision rule. Every row's `note` column says `pre-labelled by Claude, needs my review`. <!-- TODO (Akanksha): read every row, correct what you disagree with, and update the note column and the counts below. Then label the 20 rows in cold_20_to_label.csv yourself WITHOUT looking at labels.csv, put your labels into labels.csv, and set their note to `cold`. Re-run notebook sections 2-5 and re-commit results.json and test_split.csv. -->
+
+I did not reach the 200 rows the brief asks for. I got 161, because Kaggle rate-limited my collection (it refused requests after I fetched too quickly) and because many posts fit none of my labels. Under the brief's stop rule that is above the 150-row floor.
 
 **Counts per label:**
 
 | Label | Count | Share |
 |---|---|---|
-|  |  |  |
-|  |  |  |
-|  |  |  |
-| **Total** |  | 100% |
+| `open_question` | 71 | 44% |
+| `complaint` | 45 | 28% |
+| `technical_analysis` | 45 | 28% |
+| **Total** | 161 | 100% |
+
+No label is above 70% (the largest is 44%).
 
 **Three hard cases**
 
-<!-- Any post that made you pause: what it was, which two labels it could have
-     been, and what you chose. These are worth more than the easy 190. -->
-
 **1.**
-> *The post:*
+> *The post:* "I don't understand, how suddenly kaggle tpu q have been going this big lately." (Product Feedback)
 >
-> *Could have been:*
+> *Could have been:* `open_question` or `complaint`
 >
-> *I chose, because:*
+> *I chose:* `complaint`, because it names a problem affecting many users (the TPU queue) and asks for nothing specific. Under my decision rule an `open_question` asks for a concrete check or fix, and this one only expresses frustration and puzzlement.
 
 **2.**
-> *The post:*
+> *The post:* "@macruzbar The Code section is now flooded with low-effort ensemble notebooks that offer little to no originality, making it increasingly difficult to find genuinely valuable notebooks. Could Kaggle give users the ability to downvote this kind of low-quality content?"
 >
-> *Could have been:*
+> *Could have been:* `open_question` or `complaint`
 >
-> *I chose, because:*
+> *I chose:* `complaint`, because the post vents about a pattern that affects many people and asks for a broad platform change. The question mark is a request for a feature, not a specific fix for one concrete issue.
 
 **3.**
-> *The post:*
+> *The post:* "Really clear write-up. Since the random-init backbone matched pretrained Qwen (0.960436 vs 0.960444), it seems the gain comes from the architecture and not from language pretraining. Did you try removing the causal mask so CLS-style attention sees all features bidirectionally?..."
 >
-> *Could have been:*
+> *Could have been:* `technical_analysis` or `open_question`
 >
-> *I chose, because:*
+> *I chose:* `open_question`, because the post reports no result of its own. It quotes someone else's numbers and ends by asking a question that is still unresolved.
 
 ---
 
 ## The Training Run
 
-<!-- Your starting model, your settings, and anything you changed and why. -->
+**Base model:** `distilbert-base-uncased`
 
-**Base model:**
+**Settings:** 3 epochs, learning rate 2e-5, batch size 16, 128 tokens per post, seed 42 (the notebook defaults).
 
-**Settings:** <!-- epochs, learning rate, batch size, seed -->
+**Anything I changed from the defaults, and why:** Nothing. I changed only `LABELS` (to my three labels) and `NAME`.
 
-**Anything I changed from the defaults, and why:**
+**What I trained on:** Apple Silicon GPU (`mps`), torch 2.14.1. The run took about eight seconds. The device is recorded in `results.json`.
 
-**Split sizes:** <!-- train / val / test, and per-label counts in the test
-split. If a label had fewer than about 8 in test, say so — it explains a lot
-of next unit's variance. -->
+**Split sizes:** 112 train / 24 validation / 25 test (70/15/15, stratified).
 
+| Label | train | val | test |
+|---|---|---|---|
+| `technical_analysis` | 31 | 7 | 7 |
+| `open_question` | 50 | 10 | 11 |
+| `complaint` | 31 | 7 | 7 |
 
+`technical_analysis` and `complaint` have only 7 test examples each (under the 8 the brief flags), so their scores will move a lot between seeds.
+
+I committed `results.json` and `test_split.csv` and have not analysed them yet. That is next unit's work. One thing I could not miss when the notebook printed its summary: the model put almost every test post into `open_question`, the biggest label.
 
 ---
 
 ## How I Used AI
 
-<!-- Two specific moments — what you asked, what came back, what you changed.
+**Moment 1: writing my acceptance criteria.**
 
-     ⚠️ Plus disclosure of any pre-labelling. If you had a model pre-label a
-     batch and then read and corrected every one, say that. It's an allowed
-     workflow and disclosing it costs you nothing. Not disclosing it is the
-     problem. -->
+- *What I asked for:* I asked Claude to write my five acceptance criteria for me.
+- *What came back:* Five criteria with targets and short reasons (accuracy at least 0.65, every label's F1 at least 0.55, no label above 65%, 80% self-agreement on my 20 cold posts, and 85% accuracy on confident predictions).
+- *What I changed:* <!-- TODO (Akanksha): say what you changed, or what you decided to keep and why. The file `criteria.md` marks these as Claude's drafts. Note that criterion 3 still says "200 labeled posts" and I have 161. -->
 
-**Moment 1**
+**Moment 2: collecting and pre-labelling the posts.**
 
-- *What I asked for:*
-- *What came back:*
-- *What I changed:*
+- *What I asked for:* I asked Claude to collect public Kaggle Discussions posts, aiming for about 70 per label, and to pre-label them using my definitions and decision rule.
+- *What came back:* 161 posts from Kaggle's discussion pages, each with a label. Claude also noticed that one of my `open_question` examples was not a question and swapped in a real one.
+- *What I changed:* <!-- TODO (Akanksha): describe the rows you corrected and how many. -->
 
-**Moment 2**
-
-- *What I asked for:*
-- *What came back:*
-- *What I changed:*
-
-**Pre-labelling disclosure:**
+**Pre-labelling disclosure:** All 161 rows were pre-labelled by Claude. <!-- TODO (Akanksha): confirm you read and corrected every row, and name the 20 rows you labelled cold. -->
 
 <!-- ═══════════════════════ UNIT 6 — THE TEST ═══════════════════════
 
