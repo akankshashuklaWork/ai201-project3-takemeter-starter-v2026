@@ -53,7 +53,7 @@ whether you hit them:
 
 ## 1. Overall accuracy
 
-<!-- DRAFT — written by Claude at Akanksha's direct request; needs her review before submission. See label_definitions.txt / README for the taxonomy this is based on. -->
+<!-- Drafted by Claude at Akanksha's request. Akanksha reviewed all five targets and adopted them unchanged on 2026-10-21. The file was committed before the first training run, and the targets were not changed after it. -->
 
 Overall accuracy on the held-out set will be at least 0.65.
 
@@ -63,7 +63,7 @@ Overall accuracy on the held-out set will be at least 0.65.
 
 ## 2. Per-label performance (weakest label)
 
-<!-- DRAFT — same as above. -->
+<!-- Same as above: drafted by Claude, adopted by Akanksha unchanged. -->
 
 Every label will have an F1 of at least 0.55 on the held-out set, including whichever label ends up smallest.
 
@@ -73,7 +73,7 @@ Every label will have an F1 of at least 0.55 on the held-out set, including whic
 
 ## 3. Balance
 
-<!-- DRAFT — same as above. -->
+<!-- Same as above: drafted by Claude, adopted by Akanksha unchanged. -->
 
 No single label will make up more than 65% of the 200 labeled posts.
 
@@ -85,7 +85,7 @@ No single label will make up more than 65% of the 200 labeled posts.
 
 ## 4. Consistency
 
-<!-- DRAFT — same as above. -->
+<!-- Same as above: drafted by Claude, adopted by Akanksha unchanged. -->
 
 When I label the same 20 posts twice — once "cold" in Milestone 4 and once again later, without looking at my first pass — I will agree with myself on at least 80% of them.
 
@@ -97,7 +97,7 @@ When I label the same 20 posts twice — once "cold" in Milestone 4 and once aga
 
 ## 5. Confidence
 
-<!-- DRAFT — same as above. -->
+<!-- Same as above: drafted by Claude, adopted by Akanksha unchanged. -->
 
 Posts the model predicts with high confidence (top probability above 0.80) will be correct at least 85% of the time.
 
